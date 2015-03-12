@@ -1,5 +1,5 @@
 require "mits/version"
 
-module Mits
+module MITS
   # Your code goes here...
 end
