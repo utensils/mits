@@ -1,0 +1,189 @@
+---
+:PropertyID:
+  :Identification:
+  - :IDValue: SomethingRandom1
+    :IDType: property
+    :OrganizationName: parker
+  - :IDValue: 'guid: 1'
+    :IDType: Company
+    :OrganizationName: parker
+  :MarketingName: Cool New Apartment!!!!
+  :WebSite: http://harris.net/juwan
+  :Address:
+    :Description: Address of Available Listing
+    :AddressLine1: 123 Main St
+    :City: Santa Barbara
+    :State: CA
+    :PostalCode: '93003'
+    :Country: US
+    :AddressType: property
+  :Phone:
+    :PhoneNumber: '4449995555'
+    :PhoneType: office
+:ILS_Identification:
+  :Latitude: '44.0'
+  :Longitude: '45.55'
+  :LastUpdate:
+    :Month: '3'
+    :Day: '19'
+    :Year: '2012'
+  :RentalType: Market Rate
+  :ILS_IdentificationType: House for Rent
+:Information:
+  :StructureType: Standard
+  :UnitCount: '1'
+  :YearBuilt: '1970'
+  :ShortDescription: Cool New Apartment!!!!
+  :LongDescription: hello. this is a description
+  :Rents:
+    :StandardRent: '3400.00'
+  :PropertyAvailabilityURL: http://harris.net/juwan
+:Fee:
+  :ProrateType: Standard
+  :LateType: Standard
+  :LatePercent: '0'
+  :LateMinFee: '0'
+  :LateFeePerDay: '0'
+  :NonRefundableHoldFee: '0'
+  :AdminFee: '0'
+  :ApplicationFee: '50.00'
+  :BrokerFee: '0'
+:Deposit:
+  :Amount:
+    :ValueRange:
+      :Exact: '3000.00'
+      :Currency: USD
+    :AmountType: Actual
+  :DepositType: Security Deposit
+:Policy:
+  :Pet:
+    :Allowed: 'false'
+:Phase:
+  :Name: {}
+  :Description: {}
+  :UnitCount: '1'
+  :RentableUnits: '1'
+  :TotalSquareFeet: '3400'
+  :RentableSquareFeet: '3400'
+  :IDValue: SomethingRandom1
+:Building:
+  :Name: {}
+  :Description: {}
+  :UnitCount: '1'
+  :SquareFeet: '3400'
+  :IDValue: SomethingRandom1
+:Floorplan:
+  :Name: {}
+  :UnitCount: '1'
+  :Room:
+  - :Count: '4'
+    :Comment: {}
+    :RoomType: Bedroom
+  - :Count: '4'
+    :Comment: {}
+    :RoomType: Bathroom
+  :SquareFeet:
+    :Max: '3400'
+    :Min: '3400'
+  :MarketRent:
+    :Max: '3400'
+    :Min: '3400'
+  :EffectiveRent:
+    :Max: '3400'
+    :Min: '3400'
+  :IDValue: SomethingRandom1
+:ILS_Unit:
+  :Units:
+    :Unit:
+      :Identification:
+        :IDValue: SomethingRandom1
+        :OrganizationName: Roob Inc
+      :MarketingName: Cool New Apartment!!!!
+      :UnitBedrooms: '4'
+      :UnitBathrooms: '4.0'
+      :MinSquareFeet: '3400'
+      :MaxSquareFeet: '3400'
+      :SquareFootType: internal
+      :UnitRent: '3400.00'
+      :MarketRent: '3400.00'
+      :Address:
+        :AddressLine1: 123 Main St
+        :City: Santa Barbara
+        :PostalCode: '93003'
+        :Country: US
+        :AddressType: property
+  :Availability:
+    :VacateDate:
+      :Month: '3'
+      :Day: '20'
+      :Year: '2012'
+    :VacancyClass: Unoccupied
+    :MadeReadyDate:
+      :Month: '3'
+      :Day: '20'
+      :Year: '2012'
+  :Amenity:
+  - :Description: Refrigerator
+    :AmenityType: Refrigerator
+  - :Description: Range
+    :AmenityType: Range
+  - :Description: Built-In Microwave
+    :AmenityType: Microwave
+  - :Description: Built-In Dishwasher
+    :AmenityType: DishWasher
+  - :Description: Built-In Dishwasher
+    :AmenityType: Washer
+  - :Description: Garbage Disposal
+    :AmenityType: Disposal
+  - :Description: Stackable Washer/Dryer
+    :AmenityType: Dryer
+  - :Description: Stackable Washer/Dryer
+    :AmenityType: Washer
+  - :Description: Stainless steel appliances
+    :AmenityType: Other
+  - :Description: French Doors
+    :AmenityType: Other
+  - :Description: All appliances
+    :AmenityType: Other
+  - :Description: Landscaping included
+    :AmenityType: Other
+  - :Description: 2 Car Garage
+    :AmenityType: Garage
+  - :Description: Great Location
+    :AmenityType: Other
+  :IDValue: SomethingRandom1
+:File:
+- :FileType: Photo
+  :Description: Unit Photo
+  :Name: {}
+  :Caption: {}
+  :Format: image/jpg
+  :Src: http://douglaslebsack.name/triston_botsford
+  :Width: '0'
+  :Height: '0'
+  :Rank: '1'
+  :FileID: '46'
+  :Active: 'true'
+- :FileType: Photo
+  :Description: Unit Photo
+  :Name: {}
+  :Caption: {}
+  :Format: image/jpg
+  :Src: http://vonbrown.com/wilhelmine.beatty
+  :Width: '0'
+  :Height: '0'
+  :Rank: '2'
+  :FileID: '47'
+  :Active: 'true'
+- :FileType: Photo
+  :Description: Unit Photo
+  :Name: {}
+  :Caption: {}
+  :Format: image/jpg
+  :Src: http://cummings.biz/kaela
+  :Width: '0'
+  :Height: '0'
+  :Rank: '3'
+  :FileID: '48'
+  :Active: 'true'
+:IDValue: SomethingRandom1
