@@ -6,6 +6,9 @@ module MITS
 
     describe '#properties' do
       it 'will return the properties' do
+        companies = subject.properties.reduce([]) { |arr, property| arr.push(property) }
+        expect(companies.first).to be_a Property
+        expect(companies.size).to eq 2
       end
     end
 

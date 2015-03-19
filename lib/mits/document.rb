@@ -12,6 +12,14 @@ module MITS
       end
     end
 
+    def properties
+      return enum_for(:properties) unless block_given?
+
+      physical_property.for_tag(:Property).each do |tag|
+        yield Mapper.property(tag)
+      end
+    end
+
     def companies
       return enum_for(:companies) unless block_given?
 
