@@ -1,4 +1,3 @@
-# :nocov:
 module Saxerator
   module Builder
     class HashElement < Hash
@@ -28,4 +27,3 @@ module Saxerator
     end
   end
 end
-# :nocov:

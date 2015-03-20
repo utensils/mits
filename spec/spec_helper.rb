@@ -8,6 +8,7 @@ SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter, Coveralls::SimpleCo
 
 SimpleCov.start do
   add_filter 'spec'
+  add_filter 'lib/mits/saxerator_ext'
   coverage_dir 'docs/coverage'
 end
 

@@ -1,35 +1,49 @@
 # MITS
 
-A SAX powered Multifamily Information and Transactions Standard (MITS) reader.
+A SAX powered reader for [Multifamily Information and Transactions Standard \(MITS\)](http://www.mitsproject.org/) compatible documents.
+
+Currently supporting MITS __4.0__.
 
 [![Gem Version](https://badge.fury.io/rb/mits.png)](https://rubygems.org/gems/mits) [![Build Status](https://travis-ci.org/doomspork/mits.svg?branch=master)](https://travis-ci.org/doomspork/mits) [![Code Climate](https://codeclimate.com/github/doomspork/mits/badges/gpa.svg)](https://codeclimate.com/github/doomspork/mits) [![Coverage Status](https://coveralls.io/repos/doomspork/mits/badge.png?branch=master)](https://coveralls.io/r/doomspork/mits?branch=master) [![Dependency Status](https://gemnasium.com/doomspork/mits.svg)](https://gemnasium.com/doomspork/mits)
 
 ## Installation
 
-Add this line to your application's Gemfile:
+	gem install mits
 
-	gem 'mits'
+## Getting Started
 
-And require it:
-
-	require 'mits'
-
-## Usage
+Create a `MITS::Document` with a local filepath or URL: 
 
 ```ruby
-MITS::Reader(file_path, version: 4.0) do |property|
+document = MITS::Document('/example/path/mits_compatible_feed.xml')
+```
 
+Iterating over properties is easy: 
+
+```ruby
+document.properties do |property|
+  puts "#{property.name} now available online at #{property.website}"
+end
+```
+
+The `#properties` method returns a `Enumerator` if no block is provided:
+
+```ruby
+
+document.properties.each_with_object([]) do |property, arr|
+  # Only include properties with 2 or more units
+  arr.push(property) if property.units.size > 2
 end
 ```
 
 ## Contributing
 
-Feedback and fixes are always welcome.  Please make use of [Issues](https://github.com/doomspork/mits/issues) and [Pull Requests](https://github.com/doomspork/mits/pulls), all code should have test coverage.
+Feedback, feature requests, and fixes are welcome.  Please make appropriate use of [Issues](https://github.com/doomspork/mits/issues) and [Pull Requests](https://github.com/doomspork/mits/pulls).  All code should have accompanying tests.
 
-## Author/Contact
+## Author
 
-MITS is written and maintained by [@doomspork](http://github.com/doomspork).
+MITS is written, maintained, and used in production by [@doomspork](http://github.com/doomspork) as part of [CityLeash](https://cityleash.com).
 
 ## License
 
-MITS is made available under the [MIT](http://opensource.org/licenses/MIT) License.
+Please see [LICENSE](https://github.com/doomspork/mits/blob/master/LICENSE) for licensing details.
