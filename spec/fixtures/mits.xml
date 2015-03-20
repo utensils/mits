@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhysicalProperty xsi:noNamespaceSchemaLocation="http://rentals.appfolio.com/mits/v40/schemas/marketing.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Management IDValue="guid: 1" IDType="Company">
+    <PropertyContacts>
+      <Companies>
+        <Identification IDValue="guid: 1" IDType="Company"/>
+        <CompanyName>Roob Inc</CompanyName>
+        <Address AddressType="other">
+          <Description>Address of Property Management Company</Description>
+          <AddressLine1></AddressLine1>
+          <AddressLine2></AddressLine2>
+          <City></City>
+          <State></State>
+          <PostalCode></PostalCode>
+          <Country></Country>
+        </Address>
+        <WebSite>http://leannonlehner.info/rory_mueller</WebSite>
+        <Logo></Logo>
+      </Companies>
+    </PropertyContacts>
+  </Management>
+  <Property IDValue="SomethingRandom1">
+    <PropertyID>
+      <Identification IDValue="SomethingRandom1" IDType="property" OrganizationName="parker"/>
+      <Identification IDValue="guid: 1" IDType="Company" OrganizationName="parker"/>
+      <MarketingName>Cool New Apartment!!!!</MarketingName>
+      <WebSite>http://harris.net/juwan</WebSite>
+      <Address AddressType="property">
+        <Description>Address of Available Listing</Description>
+        <AddressLine1>123 Main St</AddressLine1>
+        <City>Santa Barbara</City>
+        <State>CA</State>
+        <PostalCode>93003</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Phone PhoneType="office">
+        <PhoneNumber>4449995555</PhoneNumber>
+      </Phone>
+    </PropertyID>
+    <ILS_Identification RentalType="Market Rate" ILS_IdentificationType="House for Rent">
+      <Latitude>44.0</Latitude>
+      <Longitude>45.55</Longitude>
+      <LastUpdate Month="3" Day="19" Year="2012"/>
+    </ILS_Identification>
+    <Information>
+      <StructureType>Standard</StructureType>
+      <UnitCount>1</UnitCount>
+      <YearBuilt>1970</YearBuilt>
+      <ShortDescription>Cool New Apartment!!!!</ShortDescription>
+      <LongDescription>hello. this is a description</LongDescription>
+      <Rents>
+        <StandardRent>3400.00</StandardRent>
+      </Rents>
+      <PropertyAvailabilityURL>http://harris.net/juwan</PropertyAvailabilityURL>
+    </Information>
+    <Fee>
+      <ProrateType>Standard</ProrateType>
+      <LateType>Standard</LateType>
+      <LatePercent>0</LatePercent>
+      <LateMinFee>0</LateMinFee>
+      <LateFeePerDay>0</LateFeePerDay>
+      <NonRefundableHoldFee>0</NonRefundableHoldFee>
+      <AdminFee>0</AdminFee>
+      <ApplicationFee>50.00</ApplicationFee>
+      <BrokerFee>0</BrokerFee>
+    </Fee>
+    <Deposit DepositType="Security Deposit">
+      <Amount AmountType="Actual">
+        <ValueRange Exact="3000.00" Currency="USD"/>
+      </Amount>
+    </Deposit>
+    <Policy>
+      <Pet Allowed="false"/>
+    </Policy>
+    <Phase IDValue="SomethingRandom1">
+      <Name/>
+      <Description/>
+      <UnitCount>1</UnitCount>
+      <RentableUnits>1</RentableUnits>
+      <TotalSquareFeet>3400</TotalSquareFeet>
+      <RentableSquareFeet>3400</RentableSquareFeet>
+    </Phase>
+    <Building IDValue="SomethingRandom1">
+      <Name/>
+      <Description/>
+      <UnitCount>1</UnitCount>
+      <SquareFeet>3400</SquareFeet>
+    </Building>
+    <Floorplan IDValue="SomethingRandom1">
+      <Name/>
+      <UnitCount>1</UnitCount>
+      <Room RoomType="Bedroom">
+        <Count>4</Count>
+        <Comment/>
+      </Room>
+      <Room RoomType="Bathroom">
+        <Count>4</Count>
+        <Comment/>
+      </Room>
+      <SquareFeet Max="3400" Min="3400"/>
+      <MarketRent Max="3400" Min="3400"/>
+      <EffectiveRent Max="3400" Min="3400"/>
+    </Floorplan>
+    <ILS_Unit IDValue="SomethingRandom1">
+      <Units>
+        <Unit>
+          <Identification IDValue="SomethingRandom1" OrganizationName="Roob Inc"/>
+          <MarketingName>Cool New Apartment!!!!</MarketingName>
+          <UnitBedrooms>4</UnitBedrooms>
+          <UnitBathrooms>4.0</UnitBathrooms>
+          <MinSquareFeet>3400</MinSquareFeet>
+          <MaxSquareFeet>3400</MaxSquareFeet>
+          <SquareFootType>internal</SquareFootType>
+          <UnitRent>3400.00</UnitRent>
+          <MarketRent>3400.00</MarketRent>
+          <Address AddressType="property">
+            <AddressLine1>123 Main St</AddressLine1>
+            <City>Santa Barbara</City>
+            <PostalCode>93003</PostalCode>
+            <Country>US</Country>
+          </Address>
+        </Unit>
+      </Units>
+      <Availability>
+        <VacateDate Month="3" Day="20" Year="2012"/>
+        <VacancyClass>Unoccupied</VacancyClass>
+        <MadeReadyDate Month="3" Day="20" Year="2012"/>
+      </Availability>
+      <Amenity AmenityType="Refrigerator">
+        <Description>Refrigerator</Description>
+      </Amenity>
+      <Amenity AmenityType="Range">
+        <Description>Range</Description>
+      </Amenity>
+      <Amenity AmenityType="Microwave">
+        <Description>Built-In Microwave</Description>
+      </Amenity>
+      <Amenity AmenityType="DishWasher">
+        <Description>Built-In Dishwasher</Description>
+      </Amenity>
+      <Amenity AmenityType="Washer">
+        <Description>Built-In Dishwasher</Description>
+      </Amenity>
+      <Amenity AmenityType="Disposal">
+        <Description>Garbage Disposal</Description>
+      </Amenity>
+      <Amenity AmenityType="Dryer">
+        <Description>Stackable Washer/Dryer</Description>
+      </Amenity>
+      <Amenity AmenityType="Washer">
+        <Description>Stackable Washer/Dryer</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>Stainless steel appliances</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>French Doors</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>All appliances</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>Landscaping included</Description>
+      </Amenity>
+      <Amenity AmenityType="Garage">
+        <Description>2 Car Garage</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>Great Location</Description>
+      </Amenity>
+    </ILS_Unit>
+    <File FileID="46" Active="true">
+      <FileType>Photo</FileType>
+      <Description>Unit Photo</Description>
+      <Name/>
+      <Caption/>
+      <Format>image/jpg</Format>
+      <Src>http://douglaslebsack.name/triston_botsford</Src>
+      <Width>0</Width>
+      <Height>0</Height>
+      <Rank>1</Rank>
+    </File>
+    <File FileID="47" Active="true">
+      <FileType>Photo</FileType>
+      <Description>Unit Photo</Description>
+      <Name/>
+      <Caption/>
+      <Format>image/jpg</Format>
+      <Src>http://vonbrown.com/wilhelmine.beatty</Src>
+      <Width>0</Width>
+      <Height>0</Height>
+      <Rank>2</Rank>
+    </File>
+    <File FileID="48" Active="true">
+      <FileType>Photo</FileType>
+      <Description>Unit Photo</Description>
+      <Name/>
+      <Caption/>
+      <Format>image/jpg</Format>
+      <Src>http://cummings.biz/kaela</Src>
+      <Width>0</Width>
+      <Height>0</Height>
+      <Rank>3</Rank>
+    </File>
+  </Property>
+  <Property IDValue="SomethingRandom2">
+    <PropertyID>
+      <Identification IDValue="SomethingRandom2" IDType="property" OrganizationName="jaskolski"/>
+      <Identification IDValue="guid: 2" IDType="Company" OrganizationName="jaskolski"/>
+      <MarketingName>Cool New Apartment!!!!</MarketingName>
+      <WebSite>http://terry.info/harrison_bernier</WebSite>
+      <Address AddressType="property">
+        <Description>Address of Available Listing</Description>
+        <AddressLine1>125 Main St</AddressLine1>
+        <City>Santa Barbara</City>
+        <State>CA</State>
+        <PostalCode>93003</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Phone PhoneType="office">
+        <PhoneNumber>4449995555</PhoneNumber>
+      </Phone>
+    </PropertyID>
+    <ILS_Identification RentalType="Market Rate" ILS_IdentificationType="Apartment">
+      <Latitude>44.0</Latitude>
+      <Longitude>45.55</Longitude>
+      <LastUpdate Month="3" Day="20" Year="2012"/>
+    </ILS_Identification>
+    <Information>
+      <StructureType>Standard</StructureType>
+      <UnitCount>1</UnitCount>
+      <YearBuilt>1990</YearBuilt>
+      <ShortDescription>Cool New Apartment!!!!</ShortDescription>
+      <LongDescription>hello</LongDescription>
+      <Rents>
+        <StandardRent>3400.00</StandardRent>
+      </Rents>
+      <PropertyAvailabilityURL>http://terry.info/harrison_bernier</PropertyAvailabilityURL>
+    </Information>
+    <Fee>
+      <ProrateType>Standard</ProrateType>
+      <LateType>Standard</LateType>
+      <LatePercent>0</LatePercent>
+      <LateMinFee>0</LateMinFee>
+      <LateFeePerDay>0</LateFeePerDay>
+      <NonRefundableHoldFee>0</NonRefundableHoldFee>
+      <AdminFee>0</AdminFee>
+      <ApplicationFee>20.00</ApplicationFee>
+      <BrokerFee>0</BrokerFee>
+    </Fee>
+    <Deposit DepositType="Security Deposit">
+      <Amount AmountType="Actual">
+        <ValueRange Exact="3300.00" Currency="USD"/>
+      </Amount>
+    </Deposit>
+    <Policy>
+      <Pet Allowed="false"/>
+    </Policy>
+    <Phase IDValue="SomethingRandom2">
+      <Name/>
+      <Description/>
+      <UnitCount>1</UnitCount>
+      <RentableUnits>1</RentableUnits>
+      <TotalSquareFeet>3400</TotalSquareFeet>
+      <RentableSquareFeet>3400</RentableSquareFeet>
+    </Phase>
+    <Building IDValue="SomethingRandom2">
+      <Name/>
+      <Description/>
+      <UnitCount>1</UnitCount>
+      <SquareFeet>3400</SquareFeet>
+    </Building>
+    <Floorplan IDValue="SomethingRandom2">
+      <Name/>
+      <UnitCount>1</UnitCount>
+      <Room RoomType="Bedroom">
+        <Count>4</Count>
+        <Comment/>
+      </Room>
+      <Room RoomType="Bathroom">
+        <Count>4</Count>
+        <Comment/>
+      </Room>
+      <SquareFeet Max="3400" Min="3400"/>
+      <MarketRent Max="3400" Min="3400"/>
+      <EffectiveRent Max="3400" Min="3400"/>
+    </Floorplan>
+    <ILS_Unit IDValue="SomethingRandom2">
+      <Units>
+        <Unit>
+          <Identification IDValue="SomethingRandom2" OrganizationName="Durgan LLC"/>
+          <MarketingName>Cool New Apartment!!!!</MarketingName>
+          <UnitBedrooms>4</UnitBedrooms>
+          <UnitBathrooms>4.0</UnitBathrooms>
+          <MinSquareFeet>3400</MinSquareFeet>
+          <MaxSquareFeet>3400</MaxSquareFeet>
+          <SquareFootType>internal</SquareFootType>
+          <UnitRent>3400.00</UnitRent>
+          <MarketRent>3400.00</MarketRent>
+          <Address AddressType="property">
+            <AddressLine1>125 Main St</AddressLine1>
+            <City>Santa Barbara</City>
+            <PostalCode>93003</PostalCode>
+            <Country>US</Country>
+          </Address>
+        </Unit>
+                <Unit>
+          <Identification IDValue="SomethingRandom2" OrganizationName="Durgan LLC"/>
+          <MarketingName>Cool New Apartment!!!!</MarketingName>
+          <UnitBedrooms>4</UnitBedrooms>
+          <UnitBathrooms>4.0</UnitBathrooms>
+          <MinSquareFeet>3400</MinSquareFeet>
+          <MaxSquareFeet>3400</MaxSquareFeet>
+          <SquareFootType>internal</SquareFootType>
+          <UnitRent>3400.00</UnitRent>
+          <MarketRent>3400.00</MarketRent>
+          <Address AddressType="property">
+            <AddressLine1>125 Main St</AddressLine1>
+            <City>Santa Barbara</City>
+            <PostalCode>93003</PostalCode>
+            <Country>US</Country>
+          </Address>
+        </Unit>
+      </Units>
+      <Availability>
+        <VacateDate Month="3" Day="18" Year="2012"/>
+        <VacancyClass>Unoccupied</VacancyClass>
+        <MadeReadyDate Month="3" Day="18" Year="2012"/>
+      </Availability>
+      <Amenity AmenityType="Refrigerator">
+        <Description>Refrigerator</Description>
+      </Amenity>
+      <Amenity AmenityType="Range">
+        <Description>Range</Description>
+      </Amenity>
+      <Amenity AmenityType="Microwave">
+        <Description>Built-In Microwave</Description>
+      </Amenity>
+      <Amenity AmenityType="DishWasher">
+        <Description>Built-In Dishwasher</Description>
+      </Amenity>
+      <Amenity AmenityType="Washer">
+        <Description>Built-In Dishwasher</Description>
+      </Amenity>
+      <Amenity AmenityType="Disposal">
+        <Description>Garbage Disposal</Description>
+      </Amenity>
+      <Amenity AmenityType="Dryer">
+        <Description>Stackable Washer/Dryer</Description>
+      </Amenity>
+      <Amenity AmenityType="Washer">
+        <Description>Stackable Washer/Dryer</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>Stainless steel appliances</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>French Doors</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>All appliances</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>Landscaping included</Description>
+      </Amenity>
+      <Amenity AmenityType="Garage">
+        <Description>2 Car Garage</Description>
+      </Amenity>
+      <Amenity AmenityType="Other">
+        <Description>Great Location</Description>
+      </Amenity>
+    </ILS_Unit>
+    <File FileID="49" Active="true">
+      <FileType>Photo</FileType>
+      <Description>Unit Photo</Description>
+      <Name/>
+      <Caption/>
+      <Format>image/jpg</Format>
+      <Src>http://maggioabbott.org/gordon</Src>
+      <Width>0</Width>
+      <Height>0</Height>
+      <Rank>1</Rank>
+    </File>
+    <File FileID="50" Active="true">
+      <FileType>Photo</FileType>
+      <Description>Unit Photo</Description>
+      <Name/>
+      <Caption/>
+      <Format>image/jpg</Format>
+      <Src>http://littlekreiger.com/lynn_swift</Src>
+      <Width>0</Width>
+      <Height>0</Height>
+      <Rank>2</Rank>
+    </File>
+  </Property>
+</PhysicalProperty>

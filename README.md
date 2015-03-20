@@ -1,31 +1,35 @@
-# Mits
+# MITS
 
-TODO: Write a gem description
+A SAX powered Multifamily Information and Transactions Standard (MITS) reader.
+
+[![Gem Version](https://badge.fury.io/rb/mits.png)](https://rubygems.org/gems/mits) [![Build Status](https://travis-ci.org/doomspork/mits.svg?branch=master)](https://travis-ci.org/doomspork/mits) [![Code Climate](https://codeclimate.com/github/doomspork/mits/badges/gpa.svg)](https://codeclimate.com/github/doomspork/mits) [![Coverage Status](https://coveralls.io/repos/doomspork/mits/badge.png?branch=master)](https://coveralls.io/r/doomspork/mits?branch=master) [![Dependency Status](https://gemnasium.com/doomspork/mits.svg)](https://gemnasium.com/doomspork/mits)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'mits'
-```
+	gem 'mits'
 
-And then execute:
+And require it:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install mits
+	require 'mits'
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+MITS::Reader(file_path, version: 4.0) do |property|
+
+end
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/mits/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Feedback and fixes are always welcome.  Please make use of [Issues](https://github.com/doomspork/mits/issues) and [Pull Requests](https://github.com/doomspork/mits/pulls), all code should have test coverage.
+
+## Author/Contact
+
+MITS is written and maintained by [@doomspork](http://github.com/doomspork).
+
+## License
+
+MITS is made available under the [MIT](http://opensource.org/licenses/MIT) License.
