@@ -24,55 +24,66 @@ module MITS
     end
 
     def deposit(tag)
-      attrs = {
-        amount: deposit_amount(tag[:Amount][:ValueRange]),
-        description: tag[:Description],
-        percent_refundable: try(tag[:PercentRefundable], :to_f),
-        portion_refundable: try(tag[:PortionRefundable], :to_f),
-        type: tag[:DepositType],
-      }
-      Deposit.new(attrs)
+      Deposit.new(amount:             deposit_amount(tag[:Amount][:ValueRange]),
+                  description:        tag[:Description],
+                  percent_refundable: try(tag[:PercentRefundable], :to_f),
+                  portion_refundable: try(tag[:PortionRefundable], :to_f),
+                  type:               tag[:DepositType])
     end
 
     def fees(tag)
-      attrs = {
-        admin_fee: try(tag[:AdminFee], :to_f),
-        application_fee: try(tag[:ApplicationFee], :to_f),
-        broker_fee: try(tag[:BrokerFee], :to_f),
-        late_fee_per_day: try(tag[:LateFeePerDay], :to_f),
-        late_min_fee: try(tag[:LateMinFee], :to_f),
-        late_percent: try(tag[:LatePercent], :to_f),
-        late_type: tag[:LateType],
-        non_refundable_hold_fee: try(tag[:NonRefundableHoldFee], :to_f),
-        prorate_type: tag[:ProrateType]
-      }
-      Fees.new(attrs)
+      Fees.new(admin_fee:               try(tag[:AdminFee], :to_f),
+               application_fee:         try(tag[:ApplicationFee], :to_f),
+               broker_fee:              try(tag[:BrokerFee], :to_f),
+               late_fee_per_day:        try(tag[:LateFeePerDay], :to_f),
+               late_min_fee:            try(tag[:LateMinFee], :to_f),
+               late_percent:            try(tag[:LatePercent], :to_f),
+               late_type:               tag[:LateType],
+               non_refundable_hold_fee: try(tag[:NonRefundableHoldFee], :to_f),
+               prorate_type:            tag[:ProrateType])
+    end
+
+    def pets(tags)
+      tags = [tags] unless tags.is_a? Array
+      tags.map do |tag|
+        Pet.new(count:       tag[:Count].to_i,
+                description: tag[:Description],
+                size:        tag[:Size],
+                weight:      tag[:Weight],
+                type:        tag[:PetType])
+      end
+    end
+
+    def pet_policy(tag)
+      PetPolicy.new(allowed:      try_bool(tag[:Allowed]),
+                    care:         try_bool(tag[:PetCare]),
+                    deposit:      try(tag[:Deposit], :to_f),
+                    fee:          try(tag[:Fee], :to_f),
+                    pets:         pets(tag[:Pets]),
+                    rent:         try(tag[:Rent], :to_f),
+                    restrictions: tag[:Restrictions])
     end
 
     def property(tag)
-      attrs = {
-        amenities: amenities(tag[:ILS_Unit][:Amenity]),
-        deposit: deposit(tag[:Deposit]),
-        fees: fees(tag[:Fee]),
-        id: tag[:IDValue],
-        name: tag[:PropertyID][:MarketingName],
-        units: units(tag[:ILS_Unit][:Units][:Unit]),
-        website: tag[:PropertyID][:WebSite]
-      }
-      Property.new(attrs)
+      Property.new(amenities:  amenities(tag[:ILS_Unit][:Amenity]),
+                   deposit:    deposit(tag[:Deposit]),
+                   fees:       fees(tag[:Fee]),
+                   id:         tag[:IDValue],
+                   name:       tag[:PropertyID][:MarketingName],
+                   pet_policy: tag[:Policy][:Pet],
+                   units:      units(tag[:ILS_Unit][:Units][:Unit]),
+                   website:    tag[:PropertyID][:WebSite])
+
     end
 
     def units(tags)
       tags = [tags] unless tags.is_a? Array
       tags.map do |tag|
-        attrs = {
-          bathrooms: try(tag[:UnitBathrooms], :to_f),
-          bedrooms: try(tag[:UnitBedrooms], :to_f),
-          name: tag[:MarketingName],
-          rent: try(tag[:UnitRent], :to_f),
-          sqft: unit_sqft(tag)
-        }
-        Unit.new(attrs)
+        Unit.new(bathrooms: try(tag[:UnitBathrooms], :to_f),
+                 bedrooms:  try(tag[:UnitBedrooms], :to_f),
+                 name:      tag[:MarketingName],
+                 rent:      try(tag[:UnitRent], :to_f),
+                 sqft:      unit_sqft(tag))
       end
     end
 
@@ -116,6 +127,10 @@ module MITS
         postal_code: tag[:PostalCode],
         country:     tag[:Country],
       }
+    end
+
+    def try_bool(value)
+      value == 'true'
     end
 
     def try(value, method)

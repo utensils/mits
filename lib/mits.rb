@@ -12,6 +12,8 @@ require 'mits/entities/company'
 require 'mits/entities/deposit'
 require 'mits/entities/fees'
 require 'mits/entities/file'
+require 'mits/entities/pet'
+require 'mits/entities/pet_policy'
 require 'mits/entities/property'
 require 'mits/entities/unit'
 
