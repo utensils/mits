@@ -84,6 +84,35 @@ module MITS
       end
     end
 
+    describe '.pets' do
+      subject { Mapper.pets(fixture[:Policy][:Pet][:Pets]) }
+
+      it { is_expected.to be_a Array }
+
+      it 'includes each allowed pet' do
+        first = subject.first
+        expect(first).to be_a Pet
+        expect(first.count).to eq 1
+        expect(first.size).to eq 'Large'
+        expect(first.type).to eq 'Dog'
+        expect(first.weight).to eq '60lbs'
+      end
+    end
+
+    describe '.pet_policy' do
+      subject { Mapper.pet_policy(fixture[:Policy][:Pet]) }
+
+      it { is_expected.to be_a PetPolicy }
+
+      it 'includes details' do
+        expect(subject.allowed).to be_truthy
+        expect(subject.care).to be_truthy
+        expect(subject.fee).to eq 25.00
+        expect(subject.pets).to be_a Array
+        expect(subject.rent).to eq 100.00
+      end
+    end
+
     describe '.property' do
       subject { Mapper.property(fixture) }
 

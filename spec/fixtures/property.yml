@@ -57,7 +57,23 @@
   :DepositType: Security Deposit
 :Policy:
   :Pet:
-    :Allowed: 'false'
+    :Allowed: 'true'
+    :Pets:
+      - :PetType: Dog
+        :Description: ''
+        :Count: 1
+        :Size: Large
+        :Weight: 60lbs
+      - :PetType: Reptile 
+        :Description: ''
+        :Count: 1
+        :Size: Small 
+        :Weight: Under 10lbs 
+    :Comment: 'No cats allowed'
+    :Deposit: '50.00'
+    :Fee: '25.00'
+    :Rent: '100.00'
+    :PetCare: 'true'
 :Phase:
   :Name: {}
   :Description: {}
