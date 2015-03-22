@@ -12,13 +12,13 @@ Currently supporting MITS __4.0__.
 
 ## Getting Started
 
-Create a `MITS::Document` with a local filepath or URL: 
+Create a `MITS::Document` with a local filepath or URL:
 
 ```ruby
-document = MITS::Document('/example/path/mits_compatible_feed.xml')
+document = MITS::Document.new('/example/path/mits_compatible_feed.xml')
 ```
 
-Iterating over properties is easy: 
+Iterating over properties is easy:
 
 ```ruby
 document.properties do |property|
@@ -42,7 +42,7 @@ Feedback, feature requests, and fixes are welcome.  Please make appropriate use 
 
 ## Author
 
-MITS is written, maintained, and used in production by [@doomspork](http://github.com/doomspork) as part of [CityLeash](https://cityleash.com).
+MITS is written and maintained by [@doomspork](http://github.com/doomspork) as part of [CityLeash](https://cityleash.com).
 
 ## License
 
