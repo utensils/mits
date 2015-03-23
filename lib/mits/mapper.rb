@@ -65,14 +65,16 @@ module MITS
     end
 
     def property(tag)
-      Property.new(amenities:  amenities(tag[:ILS_Unit][:Amenity]),
-                   deposit:    deposit(tag[:Deposit]),
-                   fees:       fees(tag[:Fee]),
-                   id:         tag[:IDValue],
-                   name:       tag[:PropertyID][:MarketingName],
-                   pet_policy: tag[:Policy][:Pet],
-                   units:      units(tag[:ILS_Unit][:Units][:Unit]),
-                   website:    tag[:PropertyID][:WebSite])
+      Property.new(amenities:   amenities(tag[:ILS_Unit][:Amenity]),
+                   deposit:     deposit(tag[:Deposit]),
+                   description: tag[:Information][:LongDescription],
+                   fees:        fees(tag[:Fee]),
+                   id:          tag[:IDValue],
+                   name:        tag[:PropertyID][:MarketingName],
+                   pet_policy:  tag[:Policy][:Pet],
+                   summary:     tag[:Information][:ShortDescription],
+                   units:       units(tag[:ILS_Unit][:Units][:Unit]),
+                   website:     tag[:PropertyID][:WebSite])
 
     end
 

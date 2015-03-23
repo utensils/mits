@@ -119,10 +119,13 @@ module MITS
       it { is_expected.to be_a Property }
 
       it 'includes details' do
+        expect(subject.amenities.size).to eq 14
         expect(subject.deposit).to be_a Deposit
+        expect(subject.description).to eq 'hello. this is a description'
         expect(subject.fees).to be_a Fees
         expect(subject.id).to eq 'SomethingRandom1'
         expect(subject.name).to eq 'Cool New Apartment!!!!'
+        expect(subject.summary).to eq 'Cool New Apartment!!!!'
         expect(subject.units).to be_a Array
         expect(subject.website).to eq 'http://harris.net/juwan'
       end
