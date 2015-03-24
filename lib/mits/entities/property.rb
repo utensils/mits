@@ -7,6 +7,7 @@ module MITS
     attribute :deposit
     attribute :description
     attribute :fees
+    attribute :files
     attribute :id
     attribute :name
     attribute :pet_policy

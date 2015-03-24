@@ -90,6 +90,18 @@ module MITS
       end
     end
 
+    describe '.files' do
+      subject { Mapper.files(fixture[:File]) }
+
+      it { is_expected.to be_a Array }
+
+      it 'includes each file' do
+        first = subject.first
+        expect(first).to be_a File
+        expect(first.source).to eq 'http://douglaslebsack.name/triston_botsford'
+      end
+    end
+
     describe '.pets' do
       subject { Mapper.pets(fixture[:Policy][:Pet][:Pets]) }
 
@@ -130,6 +142,7 @@ module MITS
         expect(subject.deposit).to be_a Deposit
         expect(subject.description).to eq 'hello. this is a description'
         expect(subject.fees).to be_a Fees
+        expect(subject.files).to be_a Array
         expect(subject.id).to eq 'SomethingRandom1'
         expect(subject.name).to eq 'Cool New Apartment!!!!'
         expect(subject.summary).to eq 'Cool New Apartment!!!!'

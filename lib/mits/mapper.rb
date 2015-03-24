@@ -52,6 +52,22 @@ module MITS
                prorate_type:            tag[:ProrateType])
     end
 
+    def files(tags)
+      tags = [tags] unless tags.is_a? Array
+      tags.map do |tag|
+        File.new(active:      try_bool(tag[:Active]),
+                 caption:     tag[:Caption],
+                 description: tag[:Description],
+                 format:      tag[:Format],
+                 height:      try(tag[:Height], :to_i),
+                 id:          tag[:FileID],
+                 name:        tag[:Name],
+                 rank:        tag[:Rank],
+                 source:      tag[:Src],
+                 width:       tag[:Width])
+      end
+    end
+
     def pets(tags)
       tags = [tags] unless tags.is_a? Array
       tags.map do |tag|
@@ -79,6 +95,7 @@ module MITS
                    deposit:     deposit(tag[:Deposit]),
                    description: tag[:Information][:LongDescription],
                    fees:        fees(tag[:Fee]),
+                   files:       files(tag[:File]),
                    id:          tag[:IDValue],
                    name:        tag[:PropertyID][:MarketingName],
                    pet_policy:  tag[:Policy][:Pet],
