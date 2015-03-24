@@ -2,8 +2,14 @@ module MITS
   module Mapper
     extend self
 
-    def address(tag)
+    def address(tag, secondary_tag = nil)
       attrs = address_attributes(tag)
+
+      if secondary_tag
+        attrs[:latitude] = try(secondary_tag[:Latitude], :to_f)
+        attrs[:longitude] = try(secondary_tag[:Longitude], :to_f)
+      end
+
       Address.new(attrs)
     end
 
@@ -19,8 +25,11 @@ module MITS
     end
 
     def company(tag)
-      attrs = company_attributes(tag)
-      Company.new(attrs)
+      Company.new(address: address(tag[:Address]),
+                  id:      tag[:Identification][:IDValue],
+                  logo:    tag[:Logo],
+                  name:    tag[:CompanyName],
+                  website: tag[:Website])
     end
 
     def deposit(tag)
@@ -65,7 +74,8 @@ module MITS
     end
 
     def property(tag)
-      Property.new(amenities:   amenities(tag[:ILS_Unit][:Amenity]),
+      Property.new(address:     address(tag[:PropertyID][:Address], tag[:ILS_Identification]),
+                   amenities:   amenities(tag[:ILS_Unit][:Amenity]),
                    deposit:     deposit(tag[:Deposit]),
                    description: tag[:Information][:LongDescription],
                    fees:        fees(tag[:Fee]),
@@ -108,22 +118,12 @@ module MITS
       Range.new(min.to_i, max.to_i)
     end
 
-    def company_attributes(tag)
-      {
-        address: address(tag[:Address]),
-        id:      tag[:Identification][:IDValue],
-        logo:    tag[:Logo],
-        name:    tag[:CompanyName],
-        website: tag[:Website]
-      }
-    end
-
     def address_attributes(tag)
       {
         type:        tag[:AddressType],
         description: tag[:Description],
-        address1:    tag[:addressline1],
-        address2:    tag[:addressline2],
+        address1:    tag[:AddressLine1],
+        address2:    tag[:AddressLine2],
         city:        tag[:City],
         state:       tag[:State],
         postal_code: tag[:PostalCode],

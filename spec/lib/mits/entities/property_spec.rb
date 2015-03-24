@@ -2,6 +2,7 @@ require 'spec_helper'
 
 module MITS
   describe Property do
+    it { is_expected.to respond_to(:address) }
     it { is_expected.to respond_to(:amenities) }
     it { is_expected.to respond_to(:deposit) }
     it { is_expected.to respond_to(:description) }

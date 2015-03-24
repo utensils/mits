@@ -2,6 +2,7 @@ module MITS
   class Property
     include SimpleObjects::Base
 
+    attribute :address
     attribute :amenities
     attribute :deposit
     attribute :description
