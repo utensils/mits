@@ -92,6 +92,7 @@ module MITS
     def property(tag)
       Property.new(address:     address(tag[:PropertyID][:Address], tag[:ILS_Identification]),
                    amenities:   amenities(tag[:ILS_Unit][:Amenity]),
+                   company_id:  company_id(tag[:PropertyID][:Identification]),
                    deposit:     deposit(tag[:Deposit]),
                    description: tag[:Information][:LongDescription],
                    fees:        fees(tag[:Fee]),
@@ -100,6 +101,7 @@ module MITS
                    name:        tag[:PropertyID][:MarketingName],
                    pet_policy:  tag[:Policy][:Pet],
                    summary:     tag[:Information][:ShortDescription],
+                   type:        tag[:ILS_Identification][:ILS_IdentificationType],
                    units:       units(tag[:ILS_Unit][:Units][:Unit]),
                    website:     tag[:PropertyID][:WebSite])
 
@@ -117,6 +119,11 @@ module MITS
     end
 
     private
+
+    def company_id(tags)
+      tag = tags.find { |t| t[:IDType].downcase == 'company' }
+      tag[:IDValue] if tag
+    end
 
     def deposit_amount(tag)
       if tag[:Exact]

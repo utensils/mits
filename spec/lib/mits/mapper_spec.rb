@@ -139,6 +139,7 @@ module MITS
       it 'includes details' do
         expect(subject.address).to be_a Address
         expect(subject.amenities.size).to eq 14
+        expect(subject.company_id).to eq 'guid: 1'
         expect(subject.deposit).to be_a Deposit
         expect(subject.description).to eq 'hello. this is a description'
         expect(subject.fees).to be_a Fees

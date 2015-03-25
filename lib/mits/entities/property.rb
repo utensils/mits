@@ -4,6 +4,7 @@ module MITS
 
     attribute :address
     attribute :amenities
+    attribute :company_id
     attribute :deposit
     attribute :description
     attribute :fees
@@ -12,6 +13,7 @@ module MITS
     attribute :name
     attribute :pet_policy
     attribute :summary
+    attribute :type
     attribute :units
     attribute :website
   end
