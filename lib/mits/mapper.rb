@@ -80,13 +80,17 @@ module MITS
     end
 
     def pet_policy(tag)
-      PetPolicy.new(allowed:      try_bool(tag[:Allowed]),
-                    care:         try_bool(tag[:PetCare]),
-                    deposit:      try(tag[:Deposit], :to_f),
-                    fee:          try(tag[:Fee], :to_f),
-                    pets:         pets(tag[:Pets]),
-                    rent:         try(tag[:Rent], :to_f),
-                    restrictions: tag[:Restrictions])
+      if try_bool(tag[:Allowed])
+        PetPolicy.new(allowed:      true,
+                      care:         try_bool(tag[:PetCare]),
+                      deposit:      try(tag[:Deposit], :to_f),
+                      fee:          try(tag[:Fee], :to_f),
+                      pets:         pets(tag[:Pets]),
+                      rent:         try(tag[:Rent], :to_f),
+                      restrictions: tag[:Restrictions])
+      else
+        PetPolicy.new(allowed: false)
+      end
     end
 
     def property(tag)
@@ -99,7 +103,7 @@ module MITS
                    files:       files(tag[:File]),
                    id:          tag[:IDValue],
                    name:        tag[:PropertyID][:MarketingName],
-                   pet_policy:  tag[:Policy][:Pet],
+                   pet_policy:  pet_policy(tag[:Policy][:Pet]),
                    summary:     tag[:Information][:ShortDescription],
                    type:        tag[:ILS_Identification][:ILS_IdentificationType],
                    units:       units(tag[:ILS_Unit][:Units][:Unit]),

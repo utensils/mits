@@ -129,6 +129,14 @@ module MITS
         expect(subject.pets).to be_a Array
         expect(subject.rent).to eq 100.00
       end
+
+      context 'when no pets allowed' do
+        before { fixture[:Policy][:Pet][:Allowed] = 'false' }
+
+        it 'will reflect that' do
+          expect(subject.allowed).to be_falsey
+        end
+      end
     end
 
     describe '.property' do
@@ -146,6 +154,7 @@ module MITS
         expect(subject.files).to be_a Array
         expect(subject.id).to eq 'SomethingRandom1'
         expect(subject.name).to eq 'Cool New Apartment!!!!'
+        expect(subject.pet_policy).to be_a PetPolicy
         expect(subject.summary).to eq 'Cool New Apartment!!!!'
         expect(subject.units).to be_a Array
         expect(subject.website).to eq 'http://harris.net/juwan'
