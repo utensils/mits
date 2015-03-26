@@ -1,3 +1,5 @@
+require 'open-uri'
+require 'saxerator'
 require 'simple_objects'
 
 require 'mits/saxerator_ext'

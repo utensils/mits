@@ -1,6 +1,3 @@
-require 'open-uri'
-require 'saxerator'
-
 module MITS
   class Document
     attr_reader :parser
