@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 module MITS
   class Deposit
     include SimpleObjects::Base
