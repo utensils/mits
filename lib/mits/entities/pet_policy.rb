@@ -9,5 +9,7 @@ module MITS
     attribute :pets
     attribute :rent
     attribute :restrictions
+
+    alias_method :allowed?, :allowed
   end
 end

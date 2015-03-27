@@ -3,6 +3,7 @@ require 'spec_helper'
 module MITS
   describe PetPolicy do
     it { is_expected.to respond_to(:allowed) }
+    it { is_expected.to respond_to(:allowed?) }
     it { is_expected.to respond_to(:care) }
     it { is_expected.to respond_to(:deposit) }
     it { is_expected.to respond_to(:fee) }
