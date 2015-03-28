@@ -41,8 +41,11 @@ module MITS
 
     def try(value, method)
       return nil unless value
-      value.send(method)
+      if value.respond_to?(method)
+        value.send(method)
+      elsif self.respond_to?(method)
+        self.send(method, value)
+      end
     end
-
   end
 end
