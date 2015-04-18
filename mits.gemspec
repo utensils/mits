@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MITS::VERSION
   spec.authors       = ['Sean Callan']
   spec.email         = ['seancallan@gmail.com']
-  spec.summary       = 'A SAX powered MITS reader.' 
-  spec.description   = 'A SAX powered Multifamily Information and Transactions Standard (MITS) reader.'
+  spec.summary       = 'A SAX powered MITS reader for Ruby.' 
+  spec.description   = 'A SAX powered Multifamily Information and Transactions Standard (MITS) reader for Ruby.'
   spec.homepage      = 'https://github.com/doomspork/mits'
   spec.license       = 'MIT'
 
