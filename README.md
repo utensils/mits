@@ -2,7 +2,7 @@
 
 A SAX powered reader for [Multifamily Information and Transactions Standard \(MITS\)](http://www.mitsproject.org/) compatible documents.
 
-Currently supporting MITS __4.0__.
+Currently supporting MITS __4.1__.
 
 [![Gem Version](https://badge.fury.io/rb/mits.png)](https://rubygems.org/gems/mits) [![Build Status](https://travis-ci.org/doomspork/mits.svg?branch=master)](https://travis-ci.org/doomspork/mits) [![Code Climate](https://codeclimate.com/github/doomspork/mits/badges/gpa.svg)](https://codeclimate.com/github/doomspork/mits) [![Coverage Status](https://coveralls.io/repos/doomspork/mits/badge.png?branch=master)](https://coveralls.io/r/doomspork/mits?branch=master) [![Dependency Status](https://gemnasium.com/doomspork/mits.svg)](https://gemnasium.com/doomspork/mits)
 
