@@ -22,15 +22,18 @@ module MITS
     end
 
     def property_details(tag)
-      {
-        address:     address(tag[:PropertyID][:Address], tag[:ILS_Identification]),
-        amenities:   amenities(tag[:ILS_Unit][:Amenity]),
-        deposit:     deposit(tag[:Deposit]),
-        fees:        fees(tag[:Fee]),
-        files:       files(tag[:File]),
-        pet_policy:  pet_policy(tag[:Policy][:Pet]),
-        units:       units(tag[:ILS_Unit][:Units][:Unit])
-      }
+      details = {}
+
+      # Optional fields
+      details[:address]    = address(tag[:PropertyID][:Address], tag[:ILS_Identification]) if tag[:PropertyID][:Address]
+      details[:amenities]  = amenities(tag[:ILS_Unit][:Amenity]) if tag[:ILS_Unit][:Amenity]
+      details[:deposit]    = try(tag[:Deposit], :deposit)
+      details[:fees]       = try(tag[:Fee], :fees)
+      details[:files]      = try(tag[:File], :files)
+      details[:pet_policy] = try(tag[:Policy][:Pet], :pet_policy)
+      details[:units]      = try(tag[:ILS_Unit][:Units][:Unit], :units)
+
+      details
     end
 
     def company_id(tags)
