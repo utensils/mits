@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module MITS
   describe Document do
-    subject { Document.new('./spec/fixtures/mits.xml', version: 4.1) }
+    subject { Document.new('./spec/fixtures/MITS_4.1_Sample.xml', version: 4.1) }
 
     describe '#properties' do
       it 'will return the properties' do
