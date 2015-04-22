@@ -42,7 +42,7 @@ Feedback, feature requests, and fixes are welcomed and encouraged.  Please make 
 
 ## Author
 
-MITS is written and maintained by [@doomspork](http://github.com/doomspork) as part of [CityLeash](https://cityleash.com).
+MITS is written and maintained by [@doomspork](http://github.com/doomspork) as part of [CityLeash.com](https://cityleash.com).
 
 ## License
 
