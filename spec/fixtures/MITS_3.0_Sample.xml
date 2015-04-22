@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PhysicalProperty>
+    <Management>
+        <Identification IDType = "ManagementID">
+            <IDValue>6890047</IDValue>
+        </Identification>
+        <PropertyContacts>
+            <Companies>
+                <Identification IDType = "ManagementID">
+                    <IDValue>6890047</IDValue>
+                </Identification>
+                <CompanyName>Camden</CompanyName>
+            </Companies>
+        </PropertyContacts>
+    </Management>
+    <Property>
+        <Identification IDType = "ManagementID">
+            <IDValue>6890047</IDValue>
+        </Identification>
+        <PropertyID>
+            <Identification IDType = "PrimaryID">
+                <IDValue>89851</IDValue>
+            </Identification>
+            <Identification IDType = "SecondaryID">
+                <IDValue>89851</IDValue>
+            </Identification>
+            <MarketingName>Camden Lakes</MarketingName>
+            <Address AddressType = "property">
+                <Address>11401 Dr. Martin Luther King Jr. St N</Address>
+                <City>Saint Petersburg</City>
+                <State>FL</State>
+                <PostalCode>33716</PostalCode>
+                <Email>sales@camdenliving.com</Email>
+            </Address>
+            <Phone PhoneType = "office">
+                <PhoneNumber>727-577-7557</PhoneNumber>
+                <Extension/>
+            </Phone>
+            <Phone PhoneType = "fax">
+                <PhoneNumber>727-579-0280</PhoneNumber>
+                <Extension/>
+            </Phone>
+        </PropertyID>
+        <ILS_Identification RentalType = "Unspecified" ILS_IdentificationType = "Apartment"/>
+        <Information>
+            <StructureType>Standard</StructureType>
+            <UnitCount>688</UnitCount>
+            <YearBuilt>1982</YearBuilt>
+            <YearRemodeled>1999</YearRemodeled>
+            <OfficeHour>
+                <OpenTime>1:00 PM</OpenTime>
+                <CloseTime>5:00 PM</CloseTime>
+                <Day>Sunday</Day>
+            </OfficeHour>
+            <OfficeHour>
+                <OpenTime>10:00 AM</OpenTime>
+                <CloseTime>6:00 PM</CloseTime>
+                <Day>Monday</Day>
+            </OfficeHour>
+            <OfficeHour>
+                <OpenTime>10:00 AM</OpenTime>
+                <CloseTime>6:00 PM</CloseTime>
+                <Day>Tuesday</Day>
+            </OfficeHour>
+            <OfficeHour>
+                <OpenTime>10:00 AM</OpenTime>
+                <CloseTime>6:00 PM</CloseTime>
+                <Day>Wednesday</Day>
+            </OfficeHour>
+            <OfficeHour>
+                <OpenTime>10:00 AM</OpenTime>
+                <CloseTime>7:00 PM</CloseTime>
+                <Day>Thursday</Day>
+            </OfficeHour>
+            <OfficeHour>
+                <OpenTime>10:00 AM</OpenTime>
+                <CloseTime>6:00 PM</CloseTime>
+                <Day>Friday</Day>
+            </OfficeHour>
+            <OfficeHour>
+                <OpenTime>10:00 AM</OpenTime>
+                <CloseTime>5:00 PM</CloseTime>
+                <Day>Saturday</Day>
+            </OfficeHour>
+            <ShortDescription>Camden Lakes is a pet-friendly community near Tampa Bay in Florida with one and two bedroom apartment homes just waiting for you!</ShortDescription>
+            <LongDescription>Surrounded by panoramic lake views, Camden Lakes' one and two bedroom apartments feature walk-in closets, chair railings and spacious pantries. Select homes include stackable washers/dryers. Sixty-six acres of lush landscaping make our pet-friendly community a calming retreat, which offers a fitness center, swimming pools and tennis courts. Located near major employers such as Raymond James Financial, Jabil Circuit and Home Shopping Network, we're situated between the Gandy Bridge and I-275 for easy access to the Tampa Bay area.</LongDescription>
+            <LeaseLength/>
+            <DrivingDirections>Located on Dr. Martin Luther King Jr. Street, just north of the Gandy Bridge. From Tampa: Take Howard Frankland Bridge to 4th Street Exit and we're located approximately 2 miles on the right.</DrivingDirections>
+        </Information>
+        <Amenity AmenityType = "Other">
+            <Description>Extra storage</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Two outdoor sports courts</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Two lighted tennis courts</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Fitness center</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Online rent payments &amp; maintenance requests</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Car care center</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>24-hour emergency maintenance</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Bark park</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Front door trash pick-up</Description>
+        </Amenity>
+        <Amenity AmenityType = "Other">
+            <Description>Two resort-style swimming pools</Description>
+        </Amenity>
+        <Amenity AmenityType = "Laundry">
+            <Description>Clothes care center</Description>
+        </Amenity>
+        <Policy>
+            <Pet Allowed = "true">
+                <Pets PetType = "Cat" Count = "2"/>
+                <Comment/>
+                <Deposit>0</Deposit>
+                <Fee>0</Fee>
+                <Rent>0</Rent>
+                <Restrictions>We welcome your cats and dogs, up to two pets per apartment, with no weight limit. *Breed restrictions apply. We do not permit American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, any mix of the previous breeds, or any other dog or breed deemed aggressive. See management for pet approval and deposit and fee information.</Restrictions>
+                <PetCare>true</PetCare>
+            </Pet>
+            <Pet Allowed = "true">
+                <Pets PetType = "Dog" Count = "2"/>
+                <Comment/>
+                <Deposit>0</Deposit>
+                <Fee>0</Fee>
+                <Rent>0</Rent>
+                <Restrictions>We welcome your cats and dogs, up to two pets per apartment, with no weight limit. *Breed restrictions apply. We do not permit American Pit Bull Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, any mix of the previous breeds, or any other dog or breed deemed aggressive. See management for pet approval and deposit and fee information.</Restrictions>
+                <PetCare>true</PetCare>
+            </Pet>
+        </Policy>
+        <Floorplan>
+            <Identification IDType = "FloorPlanID">
+                <IDValue>546053</IDValue>
+            </Identification>
+            <FloorplanType>Internal</FloorplanType>
+            <Name>Keystone</Name>
+            <UnitCount>0</UnitCount>
+            <UnitsAvailable>0</UnitsAvailable>
+            <DisplayedUnitsAvailable>0</DisplayedUnitsAvailable>
+            <TotalRoomCount>2</TotalRoomCount>
+            <Room RoomType = "Bedroom">
+                <Count>1</Count>
+                <Comment>Comment</Comment>
+            </Room>
+            <Room RoomType = "Bathroom">
+                <Count>1.00</Count>
+                <Comment>max</Comment>
+            </Room>
+            <SquareFeet Min = "600" Max = "615"/>
+            <MarketRent Min = "779" Max = "979"/>
+            <EffectiveRent Min = "779" Max = "979"/>
+            <Amenity AmenityType = "Balcony">
+                <Description>Balcony</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "CeilingFan">
+                <Description>CeilingFan</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Patio">
+                <Description>Patio</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Refrigerator">
+                <Description>Refrigerator</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <File Active = "true" FileID = "387377">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210468/834x768/8210468.jpg</Src>
+                <Width>834</Width>
+                <Height>768</Height>
+                <Rank>1</Rank>
+                <AffiliateID>546053</AffiliateID>
+            </File>
+            <File Active = "true" FileID = "387378">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210469/1300x1300/8210469.jpg</Src>
+                <Width>1300</Width>
+                <Height>1300</Height>
+                <Rank>2</Rank>
+                <AffiliateID>546053</AffiliateID>
+            </File>
+        </Floorplan>
+        <Floorplan>
+            <Identification IDType = "FloorPlanID">
+                <IDValue>546054</IDValue>
+            </Identification>
+            <FloorplanType>Internal</FloorplanType>
+            <Name>Echo</Name>
+            <UnitCount>0</UnitCount>
+            <UnitsAvailable>0</UnitsAvailable>
+            <DisplayedUnitsAvailable>0</DisplayedUnitsAvailable>
+            <TotalRoomCount>2</TotalRoomCount>
+            <Room RoomType = "Bedroom">
+                <Count>1</Count>
+                <Comment>Comment</Comment>
+            </Room>
+            <Room RoomType = "Bathroom">
+                <Count>1.00</Count>
+                <Comment>max</Comment>
+            </Room>
+            <SquareFeet Min = "726" Max = "726"/>
+            <MarketRent Min = "859" Max = "1059"/>
+            <EffectiveRent Min = "859" Max = "1059"/>
+            <Amenity AmenityType = "Balcony">
+                <Description>Balcony</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "CeilingFan">
+                <Description>CeilingFan</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Patio">
+                <Description>Patio</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Refrigerator">
+                <Description>Refrigerator</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <File Active = "true" FileID = "387379">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210470/904x768/8210470.jpg</Src>
+                <Width>904</Width>
+                <Height>768</Height>
+                <Rank>3</Rank>
+                <AffiliateID>546054</AffiliateID>
+            </File>
+            <File Active = "true" FileID = "387380">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210471/1300x1300/8210471.jpg</Src>
+                <Width>1300</Width>
+                <Height>1300</Height>
+                <Rank>4</Rank>
+                <AffiliateID>546054</AffiliateID>
+            </File>
+        </Floorplan>
+        <Floorplan>
+            <Identification IDType = "FloorPlanID">
+                <IDValue>546055</IDValue>
+            </Identification>
+            <FloorplanType>Internal</FloorplanType>
+            <Name>Leclare</Name>
+            <UnitCount>0</UnitCount>
+            <UnitsAvailable>0</UnitsAvailable>
+            <DisplayedUnitsAvailable>0</DisplayedUnitsAvailable>
+            <TotalRoomCount>4</TotalRoomCount>
+            <Room RoomType = "Bedroom">
+                <Count>2</Count>
+                <Comment>Comment</Comment>
+            </Room>
+            <Room RoomType = "Bathroom">
+                <Count>2.00</Count>
+                <Comment>max</Comment>
+            </Room>
+            <SquareFeet Min = "810" Max = "810"/>
+            <MarketRent Min = "939" Max = "1179"/>
+            <EffectiveRent Min = "939" Max = "1179"/>
+            <Amenity AmenityType = "Balcony">
+                <Description>Balcony</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "CeilingFan">
+                <Description>CeilingFan</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Patio">
+                <Description>Patio</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Refrigerator">
+                <Description>Refrigerator</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <File Active = "true" FileID = "387381">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210472/768x1005/8210472.jpg</Src>
+                <Width>768</Width>
+                <Height>1005</Height>
+                <Rank>5</Rank>
+                <AffiliateID>546055</AffiliateID>
+            </File>
+            <File Active = "true" FileID = "387382">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210473/1300x1300/8210473.jpg</Src>
+                <Width>1300</Width>
+                <Height>1300</Height>
+                <Rank>6</Rank>
+                <AffiliateID>546055</AffiliateID>
+            </File>
+        </Floorplan>
+        <Floorplan>
+            <Identification IDType = "FloorPlanID">
+                <IDValue>546057</IDValue>
+            </Identification>
+            <FloorplanType>Internal</FloorplanType>
+            <Name>Carroll</Name>
+            <UnitCount>0</UnitCount>
+            <UnitsAvailable>0</UnitsAvailable>
+            <DisplayedUnitsAvailable>0</DisplayedUnitsAvailable>
+            <TotalRoomCount>4</TotalRoomCount>
+            <Room RoomType = "Bedroom">
+                <Count>2</Count>
+                <Comment>Comment</Comment>
+            </Room>
+            <Room RoomType = "Bathroom">
+                <Count>2.00</Count>
+                <Comment>max</Comment>
+            </Room>
+            <SquareFeet Min = "885" Max = "885"/>
+            <MarketRent Min = "1169" Max = "1329"/>
+            <EffectiveRent Min = "1169" Max = "1329"/>
+            <Amenity AmenityType = "Balcony">
+                <Description>Balcony</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "CeilingFan">
+                <Description>CeilingFan</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Patio">
+                <Description>Patio</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Refrigerator">
+                <Description>Refrigerator</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <File Active = "true" FileID = "387385">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210477/692x1024/8210477.jpg</Src>
+                <Width>692</Width>
+                <Height>1024</Height>
+                <Rank>7</Rank>
+                <AffiliateID>546057</AffiliateID>
+            </File>
+            <File Active = "true" FileID = "387386">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210478/1300x1300/8210478.jpg</Src>
+                <Width>1300</Width>
+                <Height>1300</Height>
+                <Rank>8</Rank>
+                <AffiliateID>546057</AffiliateID>
+            </File>
+        </Floorplan>
+        <Floorplan>
+            <Identification IDType = "FloorPlanID">
+                <IDValue>546056</IDValue>
+            </Identification>
+            <FloorplanType>Internal</FloorplanType>
+            <Name>Crenshaw</Name>
+            <UnitCount>0</UnitCount>
+            <UnitsAvailable>0</UnitsAvailable>
+            <DisplayedUnitsAvailable>0</DisplayedUnitsAvailable>
+            <TotalRoomCount>4</TotalRoomCount>
+            <Room RoomType = "Bedroom">
+                <Count>2</Count>
+                <Comment>Comment</Comment>
+            </Room>
+            <Room RoomType = "Bathroom">
+                <Count>2.00</Count>
+                <Comment>max</Comment>
+            </Room>
+            <SquareFeet Min = "903" Max = "903"/>
+            <MarketRent Min = "1159" Max = "1359"/>
+            <EffectiveRent Min = "1159" Max = "1359"/>
+            <Amenity AmenityType = "Balcony">
+                <Description>Balcony</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "CeilingFan">
+                <Description>CeilingFan</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Patio">
+                <Description>Patio</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <Amenity AmenityType = "Refrigerator">
+                <Description>Refrigerator</Description>
+                <Rank>0</Rank>
+            </Amenity>
+            <File Active = "true" FileID = "387383">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210474/768x1017/8210474.jpg</Src>
+                <Width>768</Width>
+                <Height>1017</Height>
+                <Rank>9</Rank>
+                <AffiliateID>546056</AffiliateID>
+            </File>
+            <File Active = "true" FileID = "387384">
+                <FileType>Floorplan</FileType>
+                <Description/>
+                <Name/>
+                <Caption/>
+                <Format>jpg</Format>
+                <Src>http://capi.myleasestar.com/v2/dimg/8210475/1300x1300/8210475.jpg</Src>
+                <Width>1300</Width>
+                <Height>1300</Height>
+                <Rank>10</Rank>
+                <AffiliateID>546056</AffiliateID>
+            </File>
+        </Floorplan>
+        <Utility MajorUtility = "Some">
+            <AirCon>false</AirCon>
+            <BroadbandInternet>false</BroadbandInternet>
+            <Cable>false</Cable>
+            <Electric>false</Electric>
+            <Gas>false</Gas>
+            <Heat>false</Heat>
+            <HotWater>false</HotWater>
+            <Satellite>false</Satellite>
+            <Sewer>false</Sewer>
+            <Telephone>false</Telephone>
+            <Trash>false</Trash>
+            <Water>false</Water>
+            <UtilityPortionIncluded>0</UtilityPortionIncluded>
+        </Utility>
+        <File Active = "true" FileID = "268135">
+            <FileType>Logo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>png</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/5719594/898x428/5719594.png</Src>
+            <Width>898</Width>
+            <Height>428</Height>
+            <Rank>1</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408660">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850808/640x431/9850808.jpg</Src>
+            <Width>640</Width>
+            <Height>431</Height>
+            <Rank>1</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408661">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850809/647x428/9850809.jpg</Src>
+            <Width>647</Width>
+            <Height>428</Height>
+            <Rank>2</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408662">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850810/642x428/9850810.jpg</Src>
+            <Width>642</Width>
+            <Height>428</Height>
+            <Rank>3</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408663">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850811/644x428/9850811.jpg</Src>
+            <Width>644</Width>
+            <Height>428</Height>
+            <Rank>4</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408664">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850812/672x428/9850812.jpg</Src>
+            <Width>672</Width>
+            <Height>428</Height>
+            <Rank>5</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408665">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850817/644x428/9850817.jpg</Src>
+            <Width>644</Width>
+            <Height>428</Height>
+            <Rank>6</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408666">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850818/642x428/9850818.jpg</Src>
+            <Width>642</Width>
+            <Height>428</Height>
+            <Rank>7</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408667">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850819/642x428/9850819.jpg</Src>
+            <Width>642</Width>
+            <Height>428</Height>
+            <Rank>8</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+        <File Active = "true" FileID = "408668">
+            <FileType>Photo</FileType>
+            <Description/>
+            <Name/>
+            <Caption/>
+            <Format>jpg</Format>
+            <Src>http://capi.myleasestar.com/v2/dimg/9850820/642x428/9850820.jpg</Src>
+            <Width>642</Width>
+            <Height>428</Height>
+            <Rank>9</Rank>
+            <AffiliateID>89851</AffiliateID>
+        </File>
+    </Property>
+</PhysicalProperty>
