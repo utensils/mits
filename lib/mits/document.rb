@@ -2,6 +2,8 @@ module MITS
   class Document
     attr_reader :mapper, :parser
 
+    DEFAULT_VERSION = '4.1'
+
     def initialize(url, opts = {})
       @mapper = load_versioned_mapper(opts[:version])
       @parser = ::Saxerator.parser(open(url)) do |c|
@@ -33,8 +35,8 @@ module MITS
     end
 
     def load_versioned_mapper(version)
-      require_relative 'v4.1/mapper'
-      MITS::V4_1::Mapper
+      version = DEFAULT_VERSION unless version
+      Versions.for(:mapper).select(version.to_s)
     end
 
   end
