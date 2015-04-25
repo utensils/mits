@@ -2,7 +2,7 @@ module Saxerator
   module Builder
     class HashElement < Hash
       def deep_hash
-        self.reduce({}) do |memo, (key, value)|
+        reduce({}) do |memo, (key, value)|
           as_hash = if value.is_a? Array
                       value.map { |v| try_hash(v) }
                     else
@@ -25,5 +25,12 @@ module Saxerator
         end
       end
     end
+
+    class StringElement
+      def to_h
+        to_s
+      end
+    end
+
   end
 end
