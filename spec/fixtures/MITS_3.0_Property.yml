@@ -1,0 +1,583 @@
+---
+:Identification:
+  :IDType: 'ManagementID'
+  :IDValue: '6890047'
+:PropertyID:
+  :Identification:
+  - :IDValue: '89851'
+    :IDType: PrimaryID
+  - :IDValue: '89851'
+    :IDType: SecondaryID
+  :MarketingName: Camden Lakes
+  :Address:
+    :Address: 11401 Dr. Martin Luther King Jr. St N
+    :City: Saint Petersburg
+    :State: FL
+    :PostalCode: '33716'
+    :Email: sales@camdenliving.com
+    :AddressType: property
+  :Phone:
+  - :PhoneNumber: 727-577-7557
+    :Extension: 
+    :PhoneType: office
+  - :PhoneNumber: 727-579-0280
+    :Extension: 
+    :PhoneType: fax
+:ILS_Identification:
+  :RentalType: Unspecified
+  :ILS_IdentificationType: Apartment
+:Information:
+  :StructureType: Standard
+  :UnitCount: '688'
+  :YearBuilt: '1982'
+  :YearRemodeled: '1999'
+  :OfficeHour:
+  - :OpenTime: 1:00 PM
+    :CloseTime: 5:00 PM
+    :Day: Sunday
+  - :OpenTime: 10:00 AM
+    :CloseTime: 6:00 PM
+    :Day: Monday
+  - :OpenTime: 10:00 AM
+    :CloseTime: 6:00 PM
+    :Day: Tuesday
+  - :OpenTime: 10:00 AM
+    :CloseTime: 6:00 PM
+    :Day: Wednesday
+  - :OpenTime: 10:00 AM
+    :CloseTime: 7:00 PM
+    :Day: Thursday
+  - :OpenTime: 10:00 AM
+    :CloseTime: 6:00 PM
+    :Day: Friday
+  - :OpenTime: 10:00 AM
+    :CloseTime: 5:00 PM
+    :Day: Saturday
+  :ShortDescription: a short description 
+  :LongDescription: a very long description 
+  :LeaseLength: 
+  :DrivingDirections: 'Located on Dr. Martin Luther King Jr. Street, just north of
+    the Gandy Bridge. From Tampa: Take Howard Frankland Bridge to 4th Street Exit
+    and we''re located approximately 2 miles on the right.'
+:Amenity:
+- :Description: Extra storage
+  :AmenityType: Other
+- :Description: Two outdoor sports courts
+  :AmenityType: Other
+- :Description: Two lighted tennis courts
+  :AmenityType: Other
+- :Description: Fitness center
+  :AmenityType: Other
+- :Description: Online rent payments & maintenance requests
+  :AmenityType: Other
+- :Description: Car care center
+  :AmenityType: Other
+- :Description: 24-hour emergency maintenance
+  :AmenityType: Other
+- :Description: Bark park
+  :AmenityType: Other
+- :Description: Front door trash pick-up
+  :AmenityType: Other
+- :Description: Two resort-style swimming pools
+  :AmenityType: Other
+- :Description: Clothes care center
+  :AmenityType: Laundry
+:Policy:
+  :Pet:
+  - :Pets:
+      :PetType: Cat
+      :Count: '2'
+    :Comment: 
+    :Deposit: '0'
+    :Fee: '0'
+    :Rent: '0'
+    :Restrictions: We welcome your cats and dogs, up to two pets per apartment, with
+      no weight limit. *Breed restrictions apply. We do not permit American Pit Bull
+      Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, any mix
+      of the previous breeds, or any other dog or breed deemed aggressive. See management
+      for pet approval and deposit and fee information.
+    :PetCare: 'true'
+    :Allowed: 'true'
+  - :Pets:
+      :PetType: Dog
+      :Count: '2'
+    :Comment: 
+    :Deposit: '0'
+    :Fee: '0'
+    :Rent: '0'
+    :Restrictions: We welcome your cats and dogs, up to two pets per apartment, with
+      no weight limit. *Breed restrictions apply. We do not permit American Pit Bull
+      Terrier, American Staffordshire Terrier, Staffordshire Bull Terrier, any mix
+      of the previous breeds, or any other dog or breed deemed aggressive. See management
+      for pet approval and deposit and fee information.
+    :PetCare: 'true'
+    :Allowed: 'true'
+:Deposit:
+  :Amount:
+    :ValueRange:
+      :Exact: '3000.00'
+      :Currency: USD
+    :AmountType: Actual
+  :DepositType: Security Deposit
+:Fee:
+  :ProrateType: Standard
+  :LateType: Standard
+  :LatePercent: '0'
+  :LateMinFee: '0'
+  :LateFeePerDay: '0'
+  :NonRefundableHoldFee: '0'
+  :AdminFee: '0'
+  :ApplicationFee: '50.00'
+  :BrokerFee: '0'
+:Floorplan:
+- :Identification:
+    :IDValue: '546053'
+    :IDType: FloorPlanID
+  :FloorplanType: Internal
+  :Name: Keystone
+  :UnitCount: '0'
+  :UnitsAvailable: '0'
+  :DisplayedUnitsAvailable: '0'
+  :TotalRoomCount: '2'
+  :Room:
+  - :Count: '1'
+    :Comment: Comment
+    :RoomType: Bedroom
+  - :Count: '1.00'
+    :Comment: max
+    :RoomType: Bathroom
+  :SquareFeet:
+    :Min: '600'
+    :Max: '615'
+  :MarketRent:
+    :Min: '779'
+    :Max: '979'
+  :EffectiveRent:
+    :Min: '779'
+    :Max: '979'
+  :Amenity:
+  - :Description: Balcony
+    :Rank: '0'
+    :AmenityType: Balcony
+  - :Description: CeilingFan
+    :Rank: '0'
+    :AmenityType: CeilingFan
+  - :Description: Patio
+    :Rank: '0'
+    :AmenityType: Patio
+  - :Description: Refrigerator
+    :Rank: '0'
+    :AmenityType: Refrigerator
+  :File:
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210468/834x768/8210468.jpg
+    :Width: '834'
+    :Height: '768'
+    :Rank: '1'
+    :AffiliateID: '546053'
+    :Active: 'true'
+    :FileID: '387377'
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210469/1300x1300/8210469.jpg
+    :Width: '1300'
+    :Height: '1300'
+    :Rank: '2'
+    :AffiliateID: '546053'
+    :Active: 'true'
+    :FileID: '387378'
+- :Identification:
+    :IDValue: '546054'
+    :IDType: FloorPlanID
+  :FloorplanType: Internal
+  :Name: Echo
+  :UnitCount: '0'
+  :UnitsAvailable: '0'
+  :DisplayedUnitsAvailable: '0'
+  :TotalRoomCount: '2'
+  :Room:
+  - :Count: '1'
+    :Comment: Comment
+    :RoomType: Bedroom
+  - :Count: '1.00'
+    :Comment: max
+    :RoomType: Bathroom
+  :SquareFeet:
+    :Min: '726'
+    :Max: '726'
+  :MarketRent:
+    :Min: '859'
+    :Max: '1059'
+  :EffectiveRent:
+    :Min: '859'
+    :Max: '1059'
+  :Amenity:
+  - :Description: Balcony
+    :Rank: '0'
+    :AmenityType: Balcony
+  - :Description: CeilingFan
+    :Rank: '0'
+    :AmenityType: CeilingFan
+  - :Description: Patio
+    :Rank: '0'
+    :AmenityType: Patio
+  - :Description: Refrigerator
+    :Rank: '0'
+    :AmenityType: Refrigerator
+  :File:
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210470/904x768/8210470.jpg
+    :Width: '904'
+    :Height: '768'
+    :Rank: '3'
+    :AffiliateID: '546054'
+    :Active: 'true'
+    :FileID: '387379'
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210471/1300x1300/8210471.jpg
+    :Width: '1300'
+    :Height: '1300'
+    :Rank: '4'
+    :AffiliateID: '546054'
+    :Active: 'true'
+    :FileID: '387380'
+- :Identification:
+    :IDValue: '546055'
+    :IDType: FloorPlanID
+  :FloorplanType: Internal
+  :Name: Leclare
+  :UnitCount: '0'
+  :UnitsAvailable: '0'
+  :DisplayedUnitsAvailable: '0'
+  :TotalRoomCount: '4'
+  :Room:
+  - :Count: '2'
+    :Comment: Comment
+    :RoomType: Bedroom
+  - :Count: '2.00'
+    :Comment: max
+    :RoomType: Bathroom
+  :SquareFeet:
+    :Min: '810'
+    :Max: '810'
+  :MarketRent:
+    :Min: '939'
+    :Max: '1179'
+  :EffectiveRent:
+    :Min: '939'
+    :Max: '1179'
+  :Amenity:
+  - :Description: Balcony
+    :Rank: '0'
+    :AmenityType: Balcony
+  - :Description: CeilingFan
+    :Rank: '0'
+    :AmenityType: CeilingFan
+  - :Description: Patio
+    :Rank: '0'
+    :AmenityType: Patio
+  - :Description: Refrigerator
+    :Rank: '0'
+    :AmenityType: Refrigerator
+  :File:
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210472/768x1005/8210472.jpg
+    :Width: '768'
+    :Height: '1005'
+    :Rank: '5'
+    :AffiliateID: '546055'
+    :Active: 'true'
+    :FileID: '387381'
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210473/1300x1300/8210473.jpg
+    :Width: '1300'
+    :Height: '1300'
+    :Rank: '6'
+    :AffiliateID: '546055'
+    :Active: 'true'
+    :FileID: '387382'
+- :Identification:
+    :IDValue: '546057'
+    :IDType: FloorPlanID
+  :FloorplanType: Internal
+  :Name: Carroll
+  :UnitCount: '0'
+  :UnitsAvailable: '0'
+  :DisplayedUnitsAvailable: '0'
+  :TotalRoomCount: '4'
+  :Room:
+  - :Count: '2'
+    :Comment: Comment
+    :RoomType: Bedroom
+  - :Count: '2.00'
+    :Comment: max
+    :RoomType: Bathroom
+  :SquareFeet:
+    :Min: '885'
+    :Max: '885'
+  :MarketRent:
+    :Min: '1169'
+    :Max: '1329'
+  :EffectiveRent:
+    :Min: '1169'
+    :Max: '1329'
+  :Amenity:
+  - :Description: Balcony
+    :Rank: '0'
+    :AmenityType: Balcony
+  - :Description: CeilingFan
+    :Rank: '0'
+    :AmenityType: CeilingFan
+  - :Description: Patio
+    :Rank: '0'
+    :AmenityType: Patio
+  - :Description: Refrigerator
+    :Rank: '0'
+    :AmenityType: Refrigerator
+  :File:
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210477/692x1024/8210477.jpg
+    :Width: '692'
+    :Height: '1024'
+    :Rank: '7'
+    :AffiliateID: '546057'
+    :Active: 'true'
+    :FileID: '387385'
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210478/1300x1300/8210478.jpg
+    :Width: '1300'
+    :Height: '1300'
+    :Rank: '8'
+    :AffiliateID: '546057'
+    :Active: 'true'
+    :FileID: '387386'
+- :Identification:
+    :IDValue: '546056'
+    :IDType: FloorPlanID
+  :FloorplanType: Internal
+  :Name: Crenshaw
+  :UnitCount: '0'
+  :UnitsAvailable: '0'
+  :DisplayedUnitsAvailable: '0'
+  :TotalRoomCount: '4'
+  :Room:
+  - :Count: '2'
+    :Comment: Comment
+    :RoomType: Bedroom
+  - :Count: '2.00'
+    :Comment: max
+    :RoomType: Bathroom
+  :SquareFeet:
+    :Min: '903'
+    :Max: '903'
+  :MarketRent:
+    :Min: '1159'
+    :Max: '1359'
+  :EffectiveRent:
+    :Min: '1159'
+    :Max: '1359'
+  :Amenity:
+  - :Description: Balcony
+    :Rank: '0'
+    :AmenityType: Balcony
+  - :Description: CeilingFan
+    :Rank: '0'
+    :AmenityType: CeilingFan
+  - :Description: Patio
+    :Rank: '0'
+    :AmenityType: Patio
+  - :Description: Refrigerator
+    :Rank: '0'
+    :AmenityType: Refrigerator
+  :File:
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210474/768x1017/8210474.jpg
+    :Width: '768'
+    :Height: '1017'
+    :Rank: '9'
+    :AffiliateID: '546056'
+    :Active: 'true'
+    :FileID: '387383'
+  - :FileType: Floorplan
+    :Description: 
+    :Name: 
+    :Caption: 
+    :Format: jpg
+    :Src: http://capi.myleasestar.com/v2/dimg/8210475/1300x1300/8210475.jpg
+    :Width: '1300'
+    :Height: '1300'
+    :Rank: '10'
+    :AffiliateID: '546056'
+    :Active: 'true'
+    :FileID: '387384'
+:Utility:
+  :AirCon: 'false'
+  :BroadbandInternet: 'false'
+  :Cable: 'false'
+  :Electric: 'false'
+  :Gas: 'false'
+  :Heat: 'false'
+  :HotWater: 'false'
+  :Satellite: 'false'
+  :Sewer: 'false'
+  :Telephone: 'false'
+  :Trash: 'false'
+  :Water: 'false'
+  :UtilityPortionIncluded: '0'
+  :MajorUtility: Some
+:File:
+- :FileType: Logo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: png
+  :Src: http://capi.myleasestar.com/v2/dimg/5719594/898x428/5719594.png
+  :Width: '898'
+  :Height: '428'
+  :Rank: '1'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '268135'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850808/640x431/9850808.jpg
+  :Width: '640'
+  :Height: '431'
+  :Rank: '1'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408660'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850809/647x428/9850809.jpg
+  :Width: '647'
+  :Height: '428'
+  :Rank: '2'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408661'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850810/642x428/9850810.jpg
+  :Width: '642'
+  :Height: '428'
+  :Rank: '3'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408662'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850811/644x428/9850811.jpg
+  :Width: '644'
+  :Height: '428'
+  :Rank: '4'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408663'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850812/672x428/9850812.jpg
+  :Width: '672'
+  :Height: '428'
+  :Rank: '5'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408664'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850817/644x428/9850817.jpg
+  :Width: '644'
+  :Height: '428'
+  :Rank: '6'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408665'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850818/642x428/9850818.jpg
+  :Width: '642'
+  :Height: '428'
+  :Rank: '7'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408666'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850819/642x428/9850819.jpg
+  :Width: '642'
+  :Height: '428'
+  :Rank: '8'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408667'
+- :FileType: Photo
+  :Description: 
+  :Name: 
+  :Caption: 
+  :Format: jpg
+  :Src: http://capi.myleasestar.com/v2/dimg/9850820/642x428/9850820.jpg
+  :Width: '642'
+  :Height: '428'
+  :Rank: '9'
+  :AffiliateID: '89851'
+  :Active: 'true'
+  :FileID: '408668'
