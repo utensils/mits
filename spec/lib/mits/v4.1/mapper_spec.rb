@@ -4,7 +4,7 @@ require 'mits/v4.1/mapper'
 module MITS
   module V4_1
     describe Mapper do
-      let(:fixture) { YAML.load_file('./spec/fixtures/property.yml') }
+      let(:fixture) { YAML.load_file('./spec/fixtures/MITS_4.1_Property.yml') }
 
       describe '.address' do
         subject { Mapper.address(fixture[:PropertyID][:Address], fixture[:ILS_Identification]) }
