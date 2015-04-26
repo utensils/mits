@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MITS::VERSION
   spec.authors       = ['Sean Callan']
   spec.email         = ['seancallan@gmail.com']
-  spec.summary       = 'A SAX powered MITS reader for Ruby.' 
-  spec.description   = 'A SAX powered Multifamily Information and Transactions Standard (MITS) reader for Ruby.'
+  spec.summary       = 'A Multifamily Information and Transactions Standard (MITS) reader for Ruby.' 
+  spec.description   = 'A SAX powered reader for Multifamily Information and Transactions Standard (MITS) files.'
   spec.homepage      = 'https://github.com/doomspork/mits'
   spec.license       = 'MIT'
 
@@ -18,8 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'simple_objects', '~> 1.1'
-  spec.add_dependency 'saxerator', '~> 0.9.5'
+  spec.add_dependency 'simple_objects',  '~> 1.2'
+  spec.add_dependency 'saxerator',       '~> 0.9.5'
+  spec.add_dependency 'versions.rb',     '~> 1.1'
 
   spec.add_development_dependency 'bundler',     '~> 1.7'
   spec.add_development_dependency 'coveralls',   '~> 0.7'
