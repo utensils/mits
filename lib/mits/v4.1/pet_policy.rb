@@ -1,17 +1,8 @@
+require 'mits/v3.0/pet_policy'
+
 module MITS
   module V4_1
-    class PetPolicy
-      include SimpleObjects::Base
-
-      attribute :allowed
-      attribute :care
-      attribute :deposit
-      attribute :fee
-      attribute :pets
-      attribute :rent
-      attribute :restrictions
-
-      alias_method :allowed?, :allowed
+    class PetPolicy < V3_0::PetPolicy
     end
   end
 end

@@ -2,7 +2,7 @@ module MITS
   module V3_0
     module Mapper
       module AddressMapper
-        def address(tag, secondary_tag = nil)
+        def address(tag, secondary_tag = nil, entity = Address)
           attrs = address_attributes(tag)
 
           if secondary_tag
@@ -10,7 +10,7 @@ module MITS
             attrs[:longitude] = try(secondary_tag[:Longitude], :to_f)
           end
 
-          Address.new(attrs)
+          entity.new(attrs)
         end
 
         private

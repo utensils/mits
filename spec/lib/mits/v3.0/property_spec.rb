@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'mits/v4.1/property'
 
 module MITS
-  module V4_1
+  module V3_0
     describe Property do
       it { is_expected.to respond_to(:address) }
       it { is_expected.to respond_to(:amenities) }
@@ -13,7 +13,7 @@ module MITS
       it { is_expected.to respond_to(:files) }
       it { is_expected.to respond_to(:id) }
       it { is_expected.to respond_to(:name) }
-      it { is_expected.to respond_to(:pet_policy) }
+      it { is_expected.to respond_to(:policy) }
       it { is_expected.to respond_to(:summary) }
       it { is_expected.to respond_to(:type) }
       it { is_expected.to respond_to(:units) }

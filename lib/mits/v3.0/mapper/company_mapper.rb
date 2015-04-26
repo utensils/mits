@@ -2,8 +2,8 @@ module MITS
   module V3_0
     module Mapper
       module CompanyMapper
-        def company(tag)
-          Company.new(address: address(tag[:Address]),
+        def company(tag, entity = Company)
+          entity.new(address:  address(tag[:Address]),
                       id:      tag[:Identification][:IDValue],
                       logo:    tag[:Logo],
                       name:    tag[:CompanyName],

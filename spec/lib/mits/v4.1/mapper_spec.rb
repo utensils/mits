@@ -7,7 +7,7 @@ module MITS
       let(:fixture) { YAML.load_file('./spec/fixtures/MITS_4.1_Property.yml') }
 
       describe '.address' do
-        subject { Mapper.address(fixture[:PropertyID][:Address], fixture[:ILS_Identification]) }
+        subject { Mapper.address(fixture[:PropertyID][:Address], fixture[:ILS_Identification], Address) }
 
         it { is_expected.to be_a Address }
 
@@ -19,7 +19,7 @@ module MITS
       end
 
       describe '.amenities' do
-        subject { Mapper.amenities(fixture[:ILS_Unit][:Amenity]) }
+        subject { Mapper.amenities(fixture[:ILS_Unit][:Amenity], Amenity) }
 
         it { is_expected.to be_a Array }
 
@@ -45,13 +45,13 @@ module MITS
           }
         end
 
-        subject { Mapper.company(tag) }
+        subject { Mapper.company(tag, Company) }
 
         it { is_expected.to be_a Company }
       end
 
       describe '.deposit' do
-        subject { Mapper.deposit(fixture[:Deposit]) }
+        subject { Mapper.deposit(fixture[:Deposit], Deposit) }
 
         it { is_expected.to be_a Deposit }
 
@@ -66,7 +66,7 @@ module MITS
             { Amount: { ValueRange: { Min: 100, Max: 1000 } } }
           end
 
-          subject { Mapper.deposit(ranged_deposit) }
+          subject { Mapper.deposit(ranged_deposit, Deposit) }
 
           it 'include deposit details' do
             expect(subject.amount).to eq 100..1000
@@ -75,7 +75,7 @@ module MITS
       end
 
       describe '.fees' do
-        subject { Mapper.fees(fixture[:Fee]) }
+        subject { Mapper.fees(fixture[:Fee], Fees) }
 
         it { is_expected.to be_a Fees }
 
@@ -93,7 +93,7 @@ module MITS
       end
 
       describe '.files' do
-        subject { Mapper.files(fixture[:File]) }
+        subject { Mapper.files(fixture[:File], File) }
 
         it { is_expected.to be_a Array }
 
@@ -105,7 +105,7 @@ module MITS
       end
 
       describe '.pets' do
-        subject { Mapper.pets(fixture[:Policy][:Pet][:Pets]) }
+        subject { Mapper.pets(fixture[:Policy][:Pet][:Pets], Pet) }
 
         it { is_expected.to be_a Array }
 
@@ -120,7 +120,7 @@ module MITS
       end
 
       describe '.pet_policy' do
-        subject { Mapper.pet_policy(fixture[:Policy][:Pet]) }
+        subject { Mapper.pet_policy(fixture[:Policy][:Pet], PetPolicy, Pet) }
 
         it { is_expected.to be_a PetPolicy }
 
@@ -141,6 +141,17 @@ module MITS
         end
       end
 
+      describe '.policy' do
+        subject { Mapper.policy(fixture[:Policy], Policy, PetPolicy, Pet) }
+
+        it { is_expected.to be_a Policy }
+
+        it 'includes details' do
+          expect(subject.general).to be_nil
+          expect(subject.pet).to be_a Array
+        end
+      end
+
       describe '.property' do
         subject { Mapper.property(fixture) }
 
@@ -156,7 +167,7 @@ module MITS
           expect(subject.files).to be_a Array
           expect(subject.id).to eq 'SomethingRandom1'
           expect(subject.name).to eq 'Cool New Apartment!!!!'
-          expect(subject.pet_policy).to be_a PetPolicy
+          expect(subject.policy).to be_a Policy
           expect(subject.summary).to eq 'Cool New Apartment!!!!'
           expect(subject.units).to be_a Array
           expect(subject.website).to eq 'http://harris.net/juwan'

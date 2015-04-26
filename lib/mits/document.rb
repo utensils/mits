@@ -1,12 +1,12 @@
 module MITS
   class Document
-    attr_reader :mapper, :parser
+    attr_reader :parser, :version
 
     DEFAULT_VERSION = '4.1'
 
     def initialize(url, opts = {})
-      @mapper = load_versioned_mapper(opts[:version])
-      @parser = ::Saxerator.parser(open(url)) do |c|
+      @version = (opts[:version] || DEFAULT_VERSION).to_s
+      @parser  = ::Saxerator.parser(open(url)) do |c|
         c.put_attributes_in_hash!
         c.symbolize_keys!
       end
@@ -24,19 +24,22 @@ module MITS
       return enum_for(:companies) unless block_given?
 
       physical_property.within(:Management).within(:PropertyContacts).each do |tag|
-        yield mapper.company(tag)
+        yield mapper.company(tag, company_entity)
       end
     end
 
     private
 
+    def company_entity
+      Versions.for(:company).select(version)
+    end
+
     def physical_property
       parser.within(:PhysicalProperty)
     end
 
-    def load_versioned_mapper(version)
-      version = DEFAULT_VERSION unless version
-      Versions.for(:mapper).select(version.to_s)
+    def mapper
+      @mapper ||= Versions.for(:mapper).select(version)
     end
 
   end

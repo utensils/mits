@@ -1,12 +1,8 @@
 module MITS
   module V4_1
-    module CompanyMapper
-      def company(tag)
-        Company.new(address: address(tag[:Address]),
-                    id:      tag[:Identification][:IDValue],
-                    logo:    tag[:Logo],
-                    name:    tag[:CompanyName],
-                    website: tag[:Website])
+    module Mapper
+      module CompanyMapper
+        extend V3_0::CompanyMapper
       end
     end
   end

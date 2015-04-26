@@ -12,7 +12,7 @@ module MITS
       attribute :files
       attribute :id
       attribute :name
-      attribute :pet_policy
+      attribute :policy
       attribute :summary
       attribute :type
       attribute :units
