@@ -17,16 +17,16 @@ module MITS
 
         def address_attributes(tag)
           {
-            address:          tag[:Address],
-            city:             tag[:City],
-            country:          tag[:Country],
-            country_name:     tag[:CountyName],
-            description:      tag[:Description],
-            postal_code:      tag[:PostalCode],
-            province:         tag[:Province],
-            state:            tag[:State],
-            type:             tag[:AddressType],
-            unparsed_address: tag[:UnparsedAddress]
+            address:          try(tag[:Address], :strip),
+            city:             try(tag[:City], :strip),
+            country:          try(tag[:Country], :strip),
+            country_name:     try(tag[:CountyName], :strip),
+            description:      try(tag[:Description], :strip),
+            postal_code:      try(tag[:PostalCode], :strip),
+            province:         try(tag[:Province], :strip),
+            state:            try(tag[:State], :strip),
+            type:             try(tag[:AddressType], :strip),
+            unparsed_address: try(tag[:UnparsedAddress], :strip)
           }
         end
       end
