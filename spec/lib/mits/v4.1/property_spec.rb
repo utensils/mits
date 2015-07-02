@@ -13,6 +13,7 @@ module MITS
       it { is_expected.to respond_to(:files) }
       it { is_expected.to respond_to(:id) }
       it { is_expected.to respond_to(:name) }
+      it { is_expected.to respond_to(:phones) }
       it { is_expected.to respond_to(:policy) }
       it { is_expected.to respond_to(:summary) }
       it { is_expected.to respond_to(:type) }

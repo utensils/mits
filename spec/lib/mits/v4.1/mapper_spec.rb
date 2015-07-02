@@ -141,6 +141,20 @@ module MITS
         end
       end
 
+      describe '.phones' do
+        subject { Mapper.phones(fixture[:PropertyID][:Phone]) }
+
+        it { is_expected.to be_a Array }
+
+        it 'includes individual phone numbers' do
+          first = subject.first
+
+          expect(first.extension).to be_nil
+          expect(first.number).to eq '4449995555'
+          expect(first.type).to eq 'office'
+        end
+      end
+
       describe '.policy' do
         subject { Mapper.policy(fixture[:Policy], Policy, PetPolicy, Pet) }
 

@@ -12,6 +12,7 @@ module MITS
       attribute :files
       attribute :id
       attribute :name
+      attribute :phones
       attribute :policy
       attribute :summary
       attribute :type

@@ -7,6 +7,7 @@ require_relative 'file'
 require_relative 'floorplan'
 require_relative 'pet'
 require_relative 'pet_policy'
+require_relative 'phone'
 require_relative 'policy'
 require_relative 'property'
 
@@ -18,6 +19,7 @@ require_relative 'mapper/fees_mapper'
 require_relative 'mapper/files_mapper'
 require_relative 'mapper/floorplan_mapper'
 require_relative 'mapper/pet_policy_mapper'
+require_relative 'mapper/phones_mapper'
 require_relative 'mapper/policy_mapper'
 require_relative 'mapper/property_mapper'
 
@@ -34,6 +36,7 @@ module MITS
       extend FilesMapper
       extend FloorplanMapper
       extend PetPolicyMapper
+      extend PhonesMapper
       extend PolicyMapper
       extend PropertyMapper
 
