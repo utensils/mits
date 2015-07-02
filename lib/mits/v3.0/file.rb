@@ -12,6 +12,7 @@ module MITS
       attribute :name
       attribute :rank
       attribute :source
+      attribute :type
       attribute :width
     end
   end

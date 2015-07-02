@@ -17,6 +17,7 @@ module MITS
                      name:        tag[:Name],
                      rank:        tag[:Rank],
                      source:      tag[:Src],
+                     type:        tag[:FileType],
                      width:       tag[:Width])
         end
       end

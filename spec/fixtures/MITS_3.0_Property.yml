@@ -18,10 +18,10 @@
     :AddressType: property
   :Phone:
   - :PhoneNumber: 727-577-7557
-    :Extension: 
+    :Extension:
     :PhoneType: office
   - :PhoneNumber: 727-579-0280
-    :Extension: 
+    :Extension:
     :PhoneType: fax
 :ILS_Identification:
   :RentalType: Unspecified
@@ -53,9 +53,9 @@
   - :OpenTime: 10:00 AM
     :CloseTime: 5:00 PM
     :Day: Saturday
-  :ShortDescription: a short description 
-  :LongDescription: a very long description 
-  :LeaseLength: 
+  :ShortDescription: a short description
+  :LongDescription: a very long description
+  :LeaseLength:
   :DrivingDirections: 'Located on Dr. Martin Luther King Jr. Street, just north of
     the Gandy Bridge. From Tampa: Take Howard Frankland Bridge to 4th Street Exit
     and we''re located approximately 2 miles on the right.'
@@ -87,7 +87,7 @@
   - :Pets:
       :PetType: Cat
       :Count: '2'
-    :Comment: 
+    :Comment:
     :Deposit: '0'
     :Fee: '0'
     :Rent: '0'
@@ -101,7 +101,7 @@
   - :Pets:
       :PetType: Dog
       :Count: '2'
-    :Comment: 
+    :Comment:
     :Deposit: '0'
     :Fee: '0'
     :Rent: '0'
@@ -170,9 +170,9 @@
     :AmenityType: Refrigerator
   :File:
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210468/834x768/8210468.jpg
     :Width: '834'
@@ -182,9 +182,9 @@
     :Active: 'true'
     :FileID: '387377'
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210469/1300x1300/8210469.jpg
     :Width: '1300'
@@ -233,9 +233,9 @@
     :AmenityType: Refrigerator
   :File:
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210470/904x768/8210470.jpg
     :Width: '904'
@@ -245,9 +245,9 @@
     :Active: 'true'
     :FileID: '387379'
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210471/1300x1300/8210471.jpg
     :Width: '1300'
@@ -296,9 +296,9 @@
     :AmenityType: Refrigerator
   :File:
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210472/768x1005/8210472.jpg
     :Width: '768'
@@ -308,9 +308,9 @@
     :Active: 'true'
     :FileID: '387381'
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210473/1300x1300/8210473.jpg
     :Width: '1300'
@@ -359,9 +359,9 @@
     :AmenityType: Refrigerator
   :File:
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210477/692x1024/8210477.jpg
     :Width: '692'
@@ -371,9 +371,9 @@
     :Active: 'true'
     :FileID: '387385'
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210478/1300x1300/8210478.jpg
     :Width: '1300'
@@ -422,9 +422,9 @@
     :AmenityType: Refrigerator
   :File:
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210474/768x1017/8210474.jpg
     :Width: '768'
@@ -434,9 +434,9 @@
     :Active: 'true'
     :FileID: '387383'
   - :FileType: Floorplan
-    :Description: 
-    :Name: 
-    :Caption: 
+    :Description:
+    :Name:
+    :Caption:
     :Format: jpg
     :Src: http://capi.myleasestar.com/v2/dimg/8210475/1300x1300/8210475.jpg
     :Width: '1300'
@@ -462,9 +462,9 @@
   :MajorUtility: Some
 :File:
 - :FileType: Logo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: png
   :Src: http://capi.myleasestar.com/v2/dimg/5719594/898x428/5719594.png
   :Width: '898'
@@ -474,9 +474,9 @@
   :Active: 'true'
   :FileID: '268135'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850808/640x431/9850808.jpg
   :Width: '640'
@@ -486,9 +486,9 @@
   :Active: 'true'
   :FileID: '408660'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850809/647x428/9850809.jpg
   :Width: '647'
@@ -498,9 +498,9 @@
   :Active: 'true'
   :FileID: '408661'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850810/642x428/9850810.jpg
   :Width: '642'
@@ -510,9 +510,9 @@
   :Active: 'true'
   :FileID: '408662'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850811/644x428/9850811.jpg
   :Width: '644'
@@ -522,9 +522,9 @@
   :Active: 'true'
   :FileID: '408663'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850812/672x428/9850812.jpg
   :Width: '672'
@@ -534,9 +534,9 @@
   :Active: 'true'
   :FileID: '408664'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850817/644x428/9850817.jpg
   :Width: '644'
@@ -546,9 +546,9 @@
   :Active: 'true'
   :FileID: '408665'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850818/642x428/9850818.jpg
   :Width: '642'
@@ -558,9 +558,9 @@
   :Active: 'true'
   :FileID: '408666'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850819/642x428/9850819.jpg
   :Width: '642'
@@ -570,9 +570,9 @@
   :Active: 'true'
   :FileID: '408667'
 - :FileType: Photo
-  :Description: 
-  :Name: 
-  :Caption: 
+  :Description:
+  :Name:
+  :Caption:
   :Format: jpg
   :Src: http://capi.myleasestar.com/v2/dimg/9850820/642x428/9850820.jpg
   :Width: '642'

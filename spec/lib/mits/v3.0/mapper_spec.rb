@@ -108,6 +108,7 @@ module MITS
           first = subject.first
           expect(first).to be_a File
           expect(first.source).to eq 'http://capi.myleasestar.com/v2/dimg/5719594/898x428/5719594.png'
+          expect(first.type).to eq 'Logo'
         end
       end
 

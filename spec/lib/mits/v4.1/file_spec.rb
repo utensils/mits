@@ -13,6 +13,7 @@ module MITS
       it { is_expected.to respond_to(:name) }
       it { is_expected.to respond_to(:rank) }
       it { is_expected.to respond_to(:source) }
+      it { is_expected.to respond_to(:type) }
       it { is_expected.to respond_to(:width) }
     end
   end
