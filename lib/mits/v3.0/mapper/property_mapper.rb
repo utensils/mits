@@ -32,6 +32,7 @@ module MITS
           details[:deposit]    = try(tag[:Deposit], :deposits)
           details[:fees]       = try(tag[:Fee], :fees)
           details[:files]      = try(tag[:File], :files)
+          details[:phones]     = try(tag[:PropertyID][:Phone], :phones)
           details[:policy]     = try(tag[:Policy], :policy)
           details[:floorplans] = try(tag[:Floorplan], :floorplans)
 

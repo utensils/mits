@@ -22,6 +22,7 @@ module MITS
             country:          try(tag[:Country], :strip),
             country_name:     try(tag[:CountyName], :strip),
             description:      try(tag[:Description], :strip),
+            email:            try(tag[:Email], :strip),
             postal_code:      try(tag[:PostalCode], :strip),
             province:         try(tag[:Province], :strip),
             state:            try(tag[:State], :strip),

@@ -8,6 +8,7 @@ module MITS
       attribute :country
       attribute :county_name
       attribute :description
+      attribute :email
       attribute :latitude
       attribute :longitude
       attribute :postal_code

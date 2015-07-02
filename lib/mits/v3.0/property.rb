@@ -13,6 +13,7 @@ module MITS
       attribute :floorplans
       attribute :id
       attribute :name
+      attribute :phones
       attribute :policy
       attribute :summary
       attribute :type
