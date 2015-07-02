@@ -9,6 +9,7 @@ module MITS
       it { is_expected.to respond_to(:country) }
       it { is_expected.to respond_to(:county_name) }
       it { is_expected.to respond_to(:description) }
+      it { is_expected.to respond_to(:email) }
       it { is_expected.to respond_to(:latitude) }
       it { is_expected.to respond_to(:longitude) }
       it { is_expected.to respond_to(:postal_code) }

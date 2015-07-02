@@ -15,6 +15,7 @@ module MITS
           expect(subject.address).to eq '11401 Dr. Martin Luther King Jr. St N'
           expect(subject.city).to eq 'Saint Petersburg'
           expect(subject.state).to eq 'FL'
+          expect(subject.email).to eq 'sales@camdenliving.com'
         end
       end
 
