@@ -31,6 +31,7 @@ module MITS
           details[:amenities]  = try(tag[:ILS_Unit][:Amenity], Amenity, :amenities)
           details[:deposit]    = try(tag[:Deposit], Deposit, :deposit)
           details[:fees]       = try(tag[:Fee], Fees, :fees)
+          details[:floorplans] = try(tag[:Floorplan], Floorplan, :floorplans)
           details[:files]      = try(tag[:File], File, :files)
           details[:policy]     = try(tag[:Policy], Policy, PetPolicy, Pet, :policy)
           details[:units]      = try(tag[:ILS_Unit][:Units][:Unit], :units)

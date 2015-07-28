@@ -203,6 +203,23 @@ module MITS
           expect(first.sqft).to eq 3400..3400
         end
       end
+
+     describe '.floorplans' do
+        subject { Mapper.floorplans(fixture[:Floorplan], Floorplan) }
+
+        it { is_expected.to be_a Array }
+
+        it 'includes individual floorplans' do
+          first = subject.first
+          expect(first).to be_a Floorplan
+          expect(first.bathrooms).to eq 4.0
+          expect(first.bedrooms).to be_nil
+          expect(first.name).to eq 'Floorplan A'
+          expect(first.rent).to eq 800..1000
+          expect(first.sqft).to eq 600..700
+        end
+      end
+
     end
   end
 end

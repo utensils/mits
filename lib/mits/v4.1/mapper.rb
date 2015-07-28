@@ -4,6 +4,7 @@ require_relative 'company'
 require_relative 'deposit'
 require_relative 'fees'
 require_relative 'file'
+require_relative 'floorplan'
 require_relative 'pet'
 require_relative 'pet_policy'
 require_relative 'policy'
@@ -19,6 +20,7 @@ require_relative '../v3.0/mapper/company_mapper'
 require_relative '../v3.0/mapper/deposit_mapper'
 require_relative '../v3.0/mapper/fees_mapper'
 require_relative '../v3.0/mapper/files_mapper'
+require_relative '../v3.0/mapper/floorplan_mapper'
 require_relative '../v3.0/mapper/pet_policy_mapper'
 require_relative '../v3.0/mapper/phones_mapper'
 require_relative '../v3.0/mapper/policy_mapper'
@@ -34,6 +36,7 @@ module MITS
       extend V3_0::Mapper::DepositMapper
       extend V3_0::Mapper::FeesMapper
       extend V3_0::Mapper::FilesMapper
+      extend V3_0::Mapper::FloorplanMapper
       extend V3_0::Mapper::PetPolicyMapper
       extend V3_0::Mapper::PhonesMapper
       extend V3_0::Mapper::PolicyMapper
@@ -41,6 +44,8 @@ module MITS
       extend AddressMapper
       extend PropertyMapper
       extend UnitsMapper
+
+      extend self
     end
   end
 end

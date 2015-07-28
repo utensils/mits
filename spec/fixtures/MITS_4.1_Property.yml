@@ -64,11 +64,11 @@
         :Count: 1
         :Size: Large
         :Weight: 60lbs
-      - :PetType: Reptile 
+      - :PetType: Reptile
         :Description: ''
         :Count: 1
-        :Size: Small 
-        :Weight: Under 10lbs 
+        :Size: Small
+        :Weight: Under 10lbs
     :Comment: 'No cats allowed'
     :Deposit: '50.00'
     :Fee: '25.00'
@@ -89,21 +89,18 @@
   :SquareFeet: '3400'
   :IDValue: SomethingRandom1
 :Floorplan:
-  :Name: {}
+  :Name: 'Floorplan A'
   :UnitCount: '1'
   :Room:
   - :Count: '4'
     :Comment: {}
-    :RoomType: Bedroom
-  - :Count: '4'
-    :Comment: {}
     :RoomType: Bathroom
   :SquareFeet:
-    :Max: '3400'
-    :Min: '3400'
+    :Max: '700'
+    :Min: '600'
   :MarketRent:
-    :Max: '3400'
-    :Min: '3400'
+    :Max: '1000'
+    :Min: '800'
   :EffectiveRent:
     :Max: '3400'
     :Min: '3400'

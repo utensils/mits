@@ -2,13 +2,13 @@ module MITS
   module V3_0
     module Mapper
       module FloorplanMapper
-        def floorplans(tags)
+        def floorplans(tags, fp = Floorplan)
           tags = [tags] unless tags.is_a? Array
-          tags.map { |tag| floorplan(tag) }
+          tags.map { |tag| floorplan(tag, fp) }
         end
 
-        def floorplan(tag)
-          Floorplan.new(bathrooms: try(rooms(tag[:Room], 'Bathroom'), :to_f),
+        def floorplan(tag, floorplan = Floorplan)
+          floorplan.new(bathrooms: try(rooms(tag[:Room], 'Bathroom'), :to_f),
                         bedrooms:  try(rooms(tag[:Room], 'Bedroom'), :to_i),
                         name:      tag[:Name],
                         rent:      range_tag(tag[:MarketRent]),
@@ -17,9 +17,9 @@ module MITS
 
         private
 
-        def rooms(tag, type)
+        def rooms(tags, type)
           tags = [tags] unless tags.is_a? Array
-          room = tag.find { |t| t[:RoomType] == type }
+          room = tags.find { |t| t[:RoomType] == type }
           room[:Count] if room
         end
       end
