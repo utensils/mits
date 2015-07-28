@@ -203,9 +203,6 @@
   :DisplayedUnitsAvailable: '0'
   :TotalRoomCount: '2'
   :Room:
-  - :Count: '1'
-    :Comment: Comment
-    :RoomType: Bedroom
   - :Count: '1.00'
     :Comment: max
     :RoomType: Bathroom

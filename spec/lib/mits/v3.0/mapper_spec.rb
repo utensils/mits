@@ -210,6 +210,13 @@ module MITS
           expect(first.rent).to eq 779..979
           expect(first.sqft).to eq 600..615
         end
+
+        it 'handles missing rooms' do
+          second = subject[1]
+          expect(second).to be_a Floorplan
+          expect(second.bathrooms).to eq 1.0
+          expect(second.bedrooms).to be_nil
+        end
       end
     end
   end

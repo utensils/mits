@@ -18,6 +18,7 @@ module MITS
         private
 
         def rooms(tag, type)
+          tags = [tags] unless tags.is_a? Array
           room = tag.find { |t| t[:RoomType] == type }
           room[:Count] if room
         end
