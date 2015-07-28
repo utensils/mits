@@ -6,6 +6,12 @@ module MITS
       value == 'true'
     end
 
+    def range_tag(tag)
+      min = tag[:Min]
+      max = tag[:Max]
+      Range.new(min.to_i, max.to_i)
+    end
+
     def try(*values, method)
       value, *args = values
       return nil unless value

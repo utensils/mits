@@ -40,12 +40,6 @@ module MITS
       extend PolicyMapper
       extend PropertyMapper
 
-      def range_tag(tag)
-        min = tag[:Min]
-        max = tag[:Max]
-        Range.new(min.to_i, max.to_i)
-      end
-
       extend self
     end
   end
